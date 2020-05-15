@@ -4,7 +4,10 @@ Sitemap
 ---
 ```
 dentoptical.digital/
-├── catalog/
+├── Каталог/
 │   └── product/
-└── contacts/
+├── Обучение/
+├── Сервис
+├── Компания
+└── Контакты/
 ```
