@@ -1,10 +1,10 @@
-# project
+# dentoptical.digital
 
 Sitemap
 ---
 ```
-site.ru
-├── catalog/              (Каталог товаров)
+dentoptical.digital/
+├── catalog/
 │   └── product/
-└── contacts
+└── contacts/
 ```
