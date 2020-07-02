@@ -1,4 +1,4 @@
-# dentoptical.digital
+# dentoptics.digital
 
 Sitemap
 ---
