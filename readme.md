@@ -3,7 +3,7 @@
 Sitemap
 ---
 ```
-dentoptical.digital/
+dentoptics.digital/
 ├── Каталог/
 │   └── product/
 ├── Обучение/
