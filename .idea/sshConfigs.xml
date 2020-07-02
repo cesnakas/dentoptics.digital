@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="dentoptics.digital" id="b0a62644-089b-4c31-90d3-0079dccc3733" port="22" nameFormat="DESCRIPTIVE" username="talpru8e_dentdigit" />
+    </configs>
+  </component>
+</project>
