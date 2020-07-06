@@ -14,8 +14,6 @@
   Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.min.css');
   // JS
   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
-  // User
-  // global $USER;
 ?>
 
   <title><?$APPLICATION->ShowTitle();?></title>
