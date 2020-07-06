@@ -3,7 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e42bea5a-1508-4d4e-8665-5de0dbba41b5" name="dentoptics.digital" url="https://dentoptics.digital">
-        <fileTransfer accessType="FTPS" host="dentoptics.digital" port="21">
+        <fileTransfer host="dentoptics.digital" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="8f6db4fd-d1d4-40ef-87dd-436e61781e4b" name="dentoptics.tmweb.ru" url="http://dentoptics.tmweb.ru">
+        <fileTransfer host="dentoptics.tmweb.ru" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
