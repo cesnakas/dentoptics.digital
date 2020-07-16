@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="e0008f01-b204-4b09-84c4-da6d9e63b136" name="dentoptics.tmweb.ru" url="http://dentoptics.tmweb.ru">
+        <fileTransfer host="dentoptics.tmweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
