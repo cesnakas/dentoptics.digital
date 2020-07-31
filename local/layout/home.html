@@ -14,18 +14,18 @@
 <body>
 	
 	<!-- navigation -->
-	<nav id="global_nav" class="navbar navbar-expand-md fixed-top">
+	<nav id="global_nav" class="navbar navbar-expand-md fixed-top navbar-light">
 		<div class="container-xl">
 			<!-- brand -->
 			<a class="navbar-brand d-block d-lg-none" href="#">Brand</a>
 			<!-- /brand -->
 			<!-- button navigaion -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<!-- /button navigaion -->
 			<!-- navigation menu -->
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse" id="globalNav">
 				<!-- left menu -->
 				<div class="navbar-nav mr-auto">
 					<a class="nav-item nav-link" href="#">Доставка и оплата</a>
@@ -37,15 +37,15 @@
 				<div class="navbar-nav mx-auto">
 					<a class="nav-item nav-link" href="#">
 						<img src="/local/templates/main/img/svg/location.svg" alt="">
-						Самара
+						<span>Самара</span>
 					</a>
 					<a class="nav-item nav-link" href="#">
 						<img src="/local/templates/main/img/svg/mail.svg" alt="">
-						example@dentoptics.digital
+						<span>example@dentoptics.digital</span>
 					</a>
 					<a class="nav-item nav-link" href="#">
 						<img src="/local/templates/main/img/svg/phone.svg" alt="">
-						Заказать обратный звонок
+						<span>Заказать обратный звонок</span>
 					</a>
 				</div>
 				<!-- /center menu -->
@@ -53,9 +53,8 @@
 				<div class="navbar-nav ml-auto">
 					<a class="nav-item nav-link" href="#">
 						<img src="/local/templates/main/img/svg/user.svg" alt="">
-						Войти
+						<span>Войти</span>
 					</a>
-					<a class="nav-item nav-link">|</a>
 					<a class="nav-item nav-link" href="#">Регистрация</a>
 				</div>
 				<!-- /right menu -->
@@ -79,8 +78,10 @@
 				<div class="col-3">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia.
 				</div>
-				<div class="col-3">
-					Корзина
+				<div class="col-3 d-flex justify-content-end">
+					<div class="header_basket">
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -142,7 +143,7 @@
 					<p>Lorem.</p>
 					<button>Lorem, ipsum.</button>
 					<div>
-						
+
 					</div>
 				</div>
 			</div>

@@ -16,4 +16,14 @@
   .brand img {
     max-width: 216px;
   }
+
+  &_basket {
+    min-width: 160px;
+    height: 50px;
+    border-radius: .5rem;
+    background-color: #f9f9f9;
+    box-shadow: 
+      -6px -6px 16px 0 rgba(255,255,255,.5), 
+      6px 6px 16px 0 rgba(32,64,94,.5);
+  }
 }
