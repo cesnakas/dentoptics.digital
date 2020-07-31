@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  min-height: 15vh; // remove
+  padding-top: 3.75rem;
+  border-top: 6px solid #b7062b;
+  color: #fff;
+  background-color: #17141a;
+
+  &_rights {
+    height: 2.25rem;
+    margin-top: 2.25rem;
+    border-top: .5px solid #404040;
+  }
+}

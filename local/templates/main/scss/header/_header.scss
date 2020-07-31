@@ -1,0 +1,19 @@
+.header {
+  margin-top: 95px;
+
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+  
+  &_column {
+    max-width: 25%;
+  }
+
+  .brand img {
+    max-width: 216px;
+  }
+}
