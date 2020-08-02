@@ -9,13 +9,6 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="8f6db4fd-d1d4-40ef-87dd-436e61781e4b" name="dentoptics.tmweb.ru" url="http://dentoptics.tmweb.ru">
-        <fileTransfer host="dentoptics.tmweb.ru" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
       <webServer id="e0008f01-b204-4b09-84c4-da6d9e63b136" name="dentoptics.tmweb.ru" url="http://dentoptics.tmweb.ru">
         <fileTransfer host="dentoptics.tmweb.ru" port="21">
           <advancedOptions>

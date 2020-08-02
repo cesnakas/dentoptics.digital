@@ -14,7 +14,7 @@
 <body>
 	
 	<!-- navigation -->
-	<nav id="global_nav" class="navbar navbar-expand-md fixed-top navbar-light">
+	<nav id="global_nav" class="navbar navbar-expand-md __fixed-top navbar-light">
 		<div class="container-xl">
 			<!-- brand -->
 			<a class="navbar-brand d-block d-lg-none" href="#">Brand</a>
@@ -67,20 +67,41 @@
 	<header class="header">
 		<div class="container-xl">
 			<div class="row">
-				<div class="col-3">
-					<a class="brand" href="#">
+				<div class="col-3 brand">
+					<a href="#">
 						<img src="/local/templates/main/img/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-3">
-					<input type="search" name="" id="">
+				<div class="col-3 header_search">
+					<input type="search" name="" id="" placeholder="Поиск по сайту">
+					<input type="submit" value="" hidden>
 				</div>
-				<div class="col-3">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia.
+				<div class="col-4 header_info">
+					<div>
+						<div>
+							<a href="tel:">8 (495) 796 24 10</a>
+							- с 10:00 до 20:00 часов по будням
+						</div>
+						<div>
+							<a href="#">8 (800) 100 23 83</a>
+							- горячая линия c 8:00 до 17:00
+						</div>
+					</div>
 				</div>
-				<div class="col-3 d-flex justify-content-end">
+				<div class="col-2 d-flex justify-content-end">
 					<div class="header_basket">
-						<span></span>
+						<a href="#">
+							<img src="/local/templates/main/img/svg/compare.svg" alt="">
+							<span class="sr-only">Compare</span>
+						</a>
+						<a href="#">
+							<img src="/local/templates/main/img/svg/subscribe.svg" alt="">
+							<span class="sr-only">Subscribe</span>
+						</a>
+						<a href="#">
+							<img src="/local/templates/main/img/svg/basket.svg" alt="">
+							<span class="sr-only">Basket</span>
+						</a>
 					</div>
 				</div>
 			</div>
