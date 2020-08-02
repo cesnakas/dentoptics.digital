@@ -32,7 +32,7 @@
     <nav id="global_nav" class="navbar navbar-expand-md __fixed-top navbar-light">
         <div class="container-xl">
             <!-- brand -->
-            <a class="navbar-brand d-block d-lg-none" href="#">Brand</a>
+            <a class="navbar-brand d-block d-lg-none" href="/">Brand</a>
             <!-- /brand -->
             <!-- button navigaion -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,15 +51,15 @@
                 <!-- center menu -->
                 <div class="navbar-nav mx-auto">
                     <a class="nav-item nav-link" href="#">
-                        <img src="/local/templates/main/img/svg/location.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/location.svg" alt="">
                         <span>Самара</span>
                     </a>
                     <a class="nav-item nav-link" href="#">
-                        <img src="/local/templates/main/img/svg/mail.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/mail.svg" alt="">
                         <span>example@dentoptics.digital</span>
                     </a>
                     <a class="nav-item nav-link" href="#">
-                        <img src="/local/templates/main/img/svg/phone.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/phone.svg" alt="">
                         <span>Заказать обратный звонок</span>
                     </a>
                 </div>
@@ -67,7 +67,7 @@
                 <!-- right menu -->
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link" href="#">
-                        <img src="/local/templates/main/img/svg/user.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/user.svg" alt="">
                         <span>Войти</span>
                     </a>
                     <a class="nav-item nav-link" href="#">Регистрация</a>
@@ -83,8 +83,8 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col-3 brand">
-                    <a href="#">
-                        <img src="/local/templates/main/img/logo.png" alt="">
+                    <a href="/">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="col-3 header_search">
@@ -106,15 +106,15 @@
                 <div class="col-2 d-flex justify-content-end">
                     <div class="header_basket">
                         <a href="#">
-                            <img src="/local/templates/main/img/svg/compare.svg" alt="">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/compare.svg" alt="">
                             <span class="sr-only">Compare</span>
                         </a>
                         <a href="#">
-                            <img src="/local/templates/main/img/svg/subscribe.svg" alt="">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/subscribe.svg" alt="">
                             <span class="sr-only">Subscribe</span>
                         </a>
                         <a href="#">
-                            <img src="/local/templates/main/img/svg/basket.svg" alt="">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/basket.svg" alt="">
                             <span class="sr-only">Basket</span>
                         </a>
                     </div>
@@ -131,14 +131,14 @@
                 <!-- navigation menu -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link" href="#">Каталог</a>
+                        <a class="nav-item nav-link" href="/catalog/">Каталог</a>
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link" href="#">Проекты</a>
-                        <a class="nav-item nav-link" href="#">Обучение</a>
-                        <a class="nav-item nav-link" href="#">Сервис</a>
-                        <a class="nav-item nav-link" href="#">Компания</a>
-                        <a class="nav-item nav-link" href="#">Контакты</a>
+                        <a class="nav-item nav-link" href="/training/">Обучение</a>
+                        <a class="nav-item nav-link" href="/service/">Сервис</a>
+                        <a class="nav-item nav-link" href="/company/">Компания</a>
+                        <a class="nav-item nav-link" href="/contacts/">Контакты</a>
                     </div>
                 </div>
             </div>
