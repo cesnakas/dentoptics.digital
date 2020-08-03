@@ -65,13 +65,26 @@
                 </div>
                 <!-- /center menu -->
                 <!-- right menu -->
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/user.svg" alt="">
-                        <span>Войти</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">Регистрация</a>
-                </div>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:sale.basket.basket.line",
+                    "nav-personal",
+                    Array(
+                        "HIDE_ON_BASKET_PAGES" => "N",
+                        "PATH_TO_PERSONAL" => SITE_DIR."personal/",
+                        "PATH_TO_PROFILE" => SITE_DIR."personal/",
+                        "PATH_TO_REGISTER" => SITE_DIR."login/",
+                        "SHOW_AUTHOR" => "Y",
+                        "SHOW_DELAY" => "Y",
+                        "SHOW_EMPTY_VALUES" => "N",
+                        "SHOW_IMAGE" => "N",
+                        "SHOW_NOTAVAIL" => "Y",
+                        "SHOW_PERSONAL_LINK" => "N",
+                        "SHOW_PRICE" => "N",
+                        "SHOW_REGISTRATION" => "Y",
+                        "SHOW_TOTAL_PRICE" => "N",
+                    ),
+                    false
+                );?>
                 <!-- /right menu -->
             </div>
             <!-- /navigation menu -->
@@ -131,12 +144,27 @@
                 <!-- navigation menu -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="/catalog/">Каталог</a>
-                        <a class="nav-item nav-link" href="#">Проекты</a>
-                        <a class="nav-item nav-link" href="/training/">Обучение</a>
-                        <a class="nav-item nav-link" href="/service/">Сервис</a>
-                        <a class="nav-item nav-link" href="/company/">Компания</a>
-                        <a class="nav-item nav-link" href="/contacts/">Контакты</a>
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "global_nav",
+                            Array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "global",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => "",
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_THEME" => "site",
+                                "ROOT_MENU_TYPE" => "global",
+                                "USE_EXT" => "N",
+                                "COMPONENT_TEMPLATE" => ".default"
+                            ),
+                            false
+                        );?>
+
                     </div>
                 </div>
             </div>
