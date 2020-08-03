@@ -1,5 +1,5 @@
 .header {
-  margin-top: 95px;
+  margin-top: calc(40px + 3rem);// 95px;
 
   &_grid {
     display: grid;

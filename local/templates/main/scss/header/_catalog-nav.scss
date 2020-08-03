@@ -1,0 +1,15 @@
+#catalog_nav {
+  margin-top: 3rem;
+  padding: 0;
+
+  .navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-link {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
