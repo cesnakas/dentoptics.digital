@@ -1,0 +1,5 @@
+#catalog_nav .nav-link:first-child:before {
+    content: '';
+    padding: 2.5px 12px;
+    background-image: url(./img/svg/menu.svg);
+}

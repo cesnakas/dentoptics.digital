@@ -19,7 +19,7 @@ $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STU
 if (!$compositeStub) {
     if ($arParams['SHOW_NUM_PRODUCTS'] == 'Y' && ($arResult['NUM_PRODUCTS'] > 0 || $arParams['SHOW_EMPTY_VALUES'] == 'Y')) {
 ?>
-        <sup style="position: absolute; top: 4px;">
+        <sup>
             <?/*=$arResult['BASKET_COUNT_DESCRIPTION'];*/?>
             <?=$arResult['NUM_PRODUCTS']?>
         </sup>
