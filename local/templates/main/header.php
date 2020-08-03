@@ -9,7 +9,7 @@
     // Bitrix
     use Bitrix\Main\Page\Asset;
     // Meta
-    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // CSS
     Asset::getInstance()->addCss('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.min.css');
@@ -130,10 +130,8 @@
                 <!-- /button -->
                 <!-- navigation menu -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mr-auto">
+                    <div class="navbar-nav">
                         <a class="nav-item nav-link" href="/catalog/">Каталог</a>
-                    </div>
-                    <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link" href="#">Проекты</a>
                         <a class="nav-item nav-link" href="/training/">Обучение</a>
                         <a class="nav-item nav-link" href="/service/">Сервис</a>
