@@ -5,6 +5,7 @@
   .navbar-nav {
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 3rem;
   }
 
   .nav-link {
@@ -23,16 +24,23 @@
       background-color: #eee;
     }
 
-    &:first-child::before {
-      content: '';
-      display: inline-flex;
-      width: 24px;
-      height: 24px;
-      margin-right: 1rem;
-      background-image: url(../img/svg/menubar.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+    &:first-child {
+      border-radius: .5rem;
+      box-shadow:
+        10px 10px 20px rgba(174,174,192,.25),
+        -10px -10px 30px rgba(255,255,255,.4);
+
+      &::before {
+        content: '';
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+        background-image: url(../img/svg/menubar.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
   }
 }
