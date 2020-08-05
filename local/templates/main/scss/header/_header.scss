@@ -63,10 +63,28 @@
       -6px -6px 16px 0 rgba(255,255,255,.5), 
       6px 6px 16px 0 rgba(32,64,94,.5);
 
-      a {
-        margin: .5rem;
-        padding: .25rem;
-        border-radius: .5rem;
-      }
+    a {
+      position: relative;
+      margin: .5rem;
+      padding: .25rem;
+      border-radius: .5rem;
+    }
+
+    sup {
+      position: absolute;
+      top: 0;
+      right: -4px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 15px;
+      min-height: 15px;
+      padding: 2px 5px;
+      border-radius: .25rem;
+      color: #fff;
+      font-size: 9px;
+      line-height: 1;
+      background-color: #ff6a6a;
+    }
   }
 }
