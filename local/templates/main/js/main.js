@@ -7,9 +7,8 @@ if ($('#bx-panel').length) {
 // Slider
 var swiper = new Swiper('.slider .swiper-container', {
 	slidesPerView: 2,
-	spaceBetween: 30,
+	spaceBetween: 20,
 	loop: true,
-	// effect: 'coverflow',
 	autoplay: {
 		delay: 2500,
 		disableOnInteraction: false,
