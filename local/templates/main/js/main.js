@@ -17,6 +17,6 @@ var swiper = new Swiper('.slider .swiper-container', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	mousewheel: true,
+	// mousewheel: true,
 	keyboard: true,
 });

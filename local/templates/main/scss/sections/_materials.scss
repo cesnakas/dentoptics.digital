@@ -1,0 +1,52 @@
+.materials {
+
+	&__headline {
+		margin-bottom: 3rem;
+		color: #17141a;
+		font-family: Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 900;
+		letter-spacing: -.045em;
+	}
+
+	&__card {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		min-height: 150px;
+		margin-bottom: 1rem;
+		padding: 15px;
+		border-radius: .25rem;
+		font-size: 12px;
+		letter-spacing: -.045em;
+		background: #fff;
+		box-shadow: 0 5px 15px rgba(0,0,0,.04);
+
+		&-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img	{
+				width: 100%;
+				max-width: 88px;
+				height: 100%;
+				max-height: 88px;
+			}
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		&-title {
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: -.045em;
+		}
+		&-buttons {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	}
+}

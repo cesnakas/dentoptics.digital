@@ -1,5 +1,51 @@
 .video {
 
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 360px;
+    overflow: hidden;
+  }
+
+  & video {
+    position: relative;
+    width: 100%; 
+    max-height: 360px;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(16px);
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgba(0,0,0,.65);
+  }
+
+  &__headline {
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,.75);
+    font-size: 48px;
+    font-weight: 800;
+  }
+  &__lead {
+    margin-bottom: 3.25rem;
+    font-size: 14px;
+  }
+  &__play {
+    font-size: 14px;
+  }
+
   &__img {
     width: 100%;
     overflow: hidden;
