@@ -51,6 +51,145 @@ $APPLICATION->SetTitle('Главная');
     </section>
     <!-- /section slider -->
 
+    <!-- section video -->
+    <section class="section video">
+
+        <div class="video__wrapper">
+            <video poster="/local/templates/main/img/video/video.png" autoplay loop muted>
+                <source src="/video/digital_event_2020.mp4" type="video/mp4">
+            </video>
+            <div class="video__overlay">
+                <div class="container-xl">
+                    <h3 class="video__headline">#DENTALWORKSHOP</h3>
+                    <p class="video__lead">Атмосфера энергии и эргономики, уникальное оснащение класса и внимательное отношение к мелочам – это пространство #DENTALWORKSHOP.</p>
+                    <div class="video__play">СМОТРЕТЬ ></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /section video -->
+
+    <!-- section expendable materials -->
+    <section class="section materials">
+        <div class="container-xl">
+            <h3 class="materials__headline">Расходные материалы</h3>
+            <div class="row">
+                <div class="col-6">
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность 4Y-TZP | 45%</span>
+                            <span>Цвета 8</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>15 090 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /section expendable materials -->
+
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
