@@ -20,3 +20,14 @@ var swiper = new Swiper('.slider .swiper-container', {
 	// mousewheel: true,
 	keyboard: true,
 });
+
+// Manufacturers
+var swiper = new Swiper('.manufacturers .swiper-container', {
+	slidesPerView: 3,
+	// spaceBetween: 20,
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+}
