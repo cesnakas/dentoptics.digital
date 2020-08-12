@@ -5,7 +5,7 @@ if ($('#bx-panel').length) {
 };
 
 // Slider
-var swiper = new Swiper('.slider .swiper-container', {
+var mySwiper = new Swiper('.slider .swiper-container', {
 	slidesPerView: 2,
 	spaceBetween: 20,
 	loop: true,
@@ -22,12 +22,15 @@ var swiper = new Swiper('.slider .swiper-container', {
 });
 
 // Manufacturers
-var swiper = new Swiper('.manufacturers .swiper-container', {
+var mySwiper = new Swiper('.manufacturers .swiper-container', {
 	slidesPerView: 3,
-	// spaceBetween: 20,
 	loop: true,
 	autoplay: {
 		delay: 2500,
 		disableOnInteraction: false,
 	},
-}
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
