@@ -34,7 +34,9 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
     <nav id="global_nav" class="navbar navbar-expand-md __fixed-top navbar-light">
         <div class="container-xl">
             <!-- brand -->
-            <a class="navbar-brand d-block d-lg-none" href="/">Brand</a>
+            <a class="navbar-brand d-none" href="/">
+                <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="">
+            </a>
             <!-- /brand -->
             <!-- button navigaion -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +101,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
             <div class="row">
                 <div class="col-3 brand">
                     <a href="/">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo.png" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="">
                     </a>
                 </div>
                 <div class="col-3 header_search">
