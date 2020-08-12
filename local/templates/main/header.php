@@ -140,7 +140,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                             "SHOW_REGISTRATION" => "N",
                             "SHOW_TOTAL_PRICE" => "N",
                             "COMPONENT_TEMPLATE" => "header-basket",
-                            "PATH_TO_BASKET" => SITE_DIR."personal/cart/",
+                            "PATH_TO_BASKET" => SITE_DIR."basket/",
                             "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
                             "SHOW_NUM_PRODUCTS" => "Y",
                             "PATH_TO_AUTHORIZE" => "",

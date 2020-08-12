@@ -3,10 +3,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог продукции");
 ?>
 
-
-    <section>
+    <section class="section">
         <div class="container-xl">
+
             Text here....
+
         </div>
     </section>
 
