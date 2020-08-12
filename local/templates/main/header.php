@@ -76,7 +76,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                         "HIDE_ON_BASKET_PAGES" => "N",
                         "PATH_TO_PERSONAL" => SITE_DIR."personal/",
                         "PATH_TO_PROFILE" => SITE_DIR."personal/",
-                        "PATH_TO_REGISTER" => SITE_DIR."login/",
+                        "PATH_TO_REGISTER" => SITE_DIR."auth/",
                         "SHOW_AUTHOR" => "Y",
                         "SHOW_DELAY" => "Y",
                         "SHOW_EMPTY_VALUES" => "N",
