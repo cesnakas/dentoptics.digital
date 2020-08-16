@@ -7,11 +7,13 @@ if ($('#bx-panel').length) {
 // Slider
 var mySwiper = new Swiper('.slider .swiper-container', {
 	slidesPerView: 2,
-	spaceBetween: 20,
+	slidesOffsetBefore: 0,
+	slidesOffsetAfter: 0,
+	spaceBetween: 40,
 	loop: true,
 	/*
 	autoplay: {
-		delay: 2500,
+		delay: 3500,
 		disableOnInteraction: false,
 	},
 	*/
