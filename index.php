@@ -5,7 +5,7 @@ $APPLICATION->SetTitle('Главная');
 
     <!-- section slider -->
     <section class="section slider">
-        <div class="container">
+        <div class="container-xl">
 
             <div class="row">
                 <div class="col-4">
@@ -30,18 +30,73 @@ $APPLICATION->SetTitle('Главная');
                     </div>
                 </div>
                 <!-- // -->
-                <div class="col-8">
+                <div class="col-8 overflow-hidden">
 
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-title">
+                                    <a href="#">
+                                        <h4 class="h4">Сканеры <br> интраоральные</h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide-img">
+                                    <img src="/images/products/product-01.png" alt="">
+                                </div>
+                                <div class="swiper-slide-text">
+                                    Традиционные методы диагностики и моделирования зубов уступают место новым, основанным на 3D-сканировании и 3D-печати.
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-title">
+                                    <a href="#">
+                                        <h4 class="h4">Сканеры <br> лабораторные</h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide-img">
+                                    <img src="/images/products/product-02.png" alt="">
+                                </div>
+                                <div class="swiper-slide-text">
+                                    Эволюция от аналоговой до цифровой стоматологии уже не является делом далекого будущего, а современной реальностью.
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-title">
+                                    <a href="#">
+                                        <h4 class="h4">Фрезы</h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide-img">
+                                    <img src="/images/products/product-03.png" alt="">
+                                </div>
+                                <div class="swiper-slide-text">
+                                    Эволюция от аналоговой до цифровой стоматологии уже не является делом далекого будущего, а современной реальностью.
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-title">
+                                    <a href="#">
+                                        <h4 class="h4">CAD/CAM <br> Комплекты</h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide-img">
+                                    <img src="/images/products/product-04.png" alt="">
+                                </div>
+                                <div class="swiper-slide-text">
+                                    Эволюция от аналоговой до цифровой стоматологии уже не является делом далекого будущего, а современной реальностью.
+                                </div>
+                            </div>
                         </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-black"></div>
-                        <div class="swiper-button-prev swiper-button-black"></div>
+                        <!-- arrows -->
+                        <div class="swiper-button-next swiper-button-black">
+                            <img src="/local/templates/main/img/svg/slide-right.svg" alt="">
+                        </div>
+                        <div class="swiper-button-prev swiper-button-black">
+                            <img src="/local/templates/main/img/svg/slide-left.svg" alt="">
+                        </div>
                     </div>
 
                 </div>

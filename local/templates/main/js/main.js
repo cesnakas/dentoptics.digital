@@ -11,12 +11,10 @@ var mySwiper = new Swiper('.slider .swiper-container', {
 	slidesOffsetAfter: 0,
 	spaceBetween: 40,
 	loop: true,
-	/*
 	autoplay: {
-		delay: 3500,
+		delay: 6500,
 		disableOnInteraction: false,
 	},
-	*/
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

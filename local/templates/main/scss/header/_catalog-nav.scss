@@ -20,7 +20,8 @@
     font-weight: bold;
     transition: .35s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &.selected {
       background-color: #eee;
     }
 
@@ -40,6 +41,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+      }
+
+      &.selected {
+        background-color: inherit;
       }
     }
   }
