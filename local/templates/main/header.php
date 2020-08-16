@@ -105,8 +105,10 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                     </a>
                 </div>
                 <div class="col-3 header_search">
+                    <!-- search -->
                     <input type="search" name="" id="" placeholder="Поиск по сайту">
                     <input type="submit" value="" hidden>
+                    <!-- /search -->
                 </div>
                 <div class="col-4 header_info">
                     <div>
