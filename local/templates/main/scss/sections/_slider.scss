@@ -7,11 +7,14 @@
     width: 100%;
     line-height: 1rem;
     a {
+      display: inline-block;
       color: #d02146;
       font-size: 12px;
-    }
-    img {
-      margin-left: .25rem;
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
