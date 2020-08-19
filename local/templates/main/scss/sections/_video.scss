@@ -46,8 +46,47 @@
     font-size: 14px;
     a {
       color: #fff;
+
       &:hover {
         text-decoration: none;
+
+        .circle,
+        .triangle {
+          animation-play-state: paused;
+        }
+        .triangle {
+          animation-name: playTriangle;
+        }
+
+      }
+      // svg
+      .circle {
+        opacity: 1;
+        animation: playCircle 2.75s ease-in-out 1.5s infinite;
+        
+        @keyframes playCircle {
+          0% {
+            stroke-dashoffset: 650;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+        }
+
+      }
+      // svg
+      .triangle {
+        animation: playTriangle 2.75s ease-in-out 1.5s infinite;
+
+        @keyframes playTriangle {
+          0% {
+            stroke-dashoffset: 480;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+        }
+
       }
     }
   }

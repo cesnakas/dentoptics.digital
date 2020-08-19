@@ -36,3 +36,12 @@ var mySwiper = new Swiper('.manufacturers .swiper-container', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+// Modal Video
+$(function(){
+	$('#modalVideo').modal({
+		show: false
+	}).on('hidden.bs.modal', function(){
+		$(this).find('video')[0].pause();
+	});
+});

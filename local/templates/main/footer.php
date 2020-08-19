@@ -100,5 +100,39 @@
         </div>
     </footer>
 
+    <!-- modal -->
+    <div class="modal fade" id="modalVideo" data-backdrop="_static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content">
+
+                <!--<div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>-->
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="/video/digital_event_2020.mp4" _muted controls>
+                            <source src="/video/digital_event_2020.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+    <!-- /modal -->
+
 </body>
 </html>
