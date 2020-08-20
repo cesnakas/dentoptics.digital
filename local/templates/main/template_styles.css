@@ -1,15 +1,13 @@
 body {
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .modal-open .modal {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) saturate(180%);
 }
 .modal-xl {
     min-width: calc(100vw - 20vw);
     max-width: calc(100vw - 20vw);
-    /*min-height: calc(100vh - 20vh);*/
-    /*max-height: calc(100vh - 20vh);*/
 }
 .modal-content {
     border-radius: .5rem;
