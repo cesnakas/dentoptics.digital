@@ -1,0 +1,38 @@
+.modal-open .modal {
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.modal {
+
+  &-xl {
+    min-width: calc(100vw - 20vw);
+    max-width: calc(100vw - 20vw);
+  }
+
+  &-content {
+    border-radius: .5rem;
+  }
+
+  &-body {
+    padding: .25rem;
+
+    video {
+      border-radius: .5rem;
+      outline: 0;
+    }
+    
+    button.close {
+      position: absolute;
+      top: .25rem;
+      right: .25rem;
+      z-index: 99;
+      padding: .5rem 1rem;
+      font-size: 2.5rem;
+      font-weight: 200;
+      text-shadow: 0 0 4px #000;
+      color: #fff;
+    }
+
+  }
+
+}
