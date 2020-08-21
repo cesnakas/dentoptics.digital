@@ -5,12 +5,11 @@ if ($('#bx-panel').length) {
 };
 
 // Modal Video Header
-$(function(){
-	$('#modalVideoHeader').modal({
-		show: false
-	}).on('hidden.bs.modal', function(){
-		$(this).find('video')[0].pause();
-	});
+$('#modalVideoHeader').on('show.bs.modal', function (e) {
+	$(this).find('video')[0].play();
+});
+$('#modalVideoHeader').on('hidden.bs.modal', function (e) {
+	$(this).find('video')[0].pause();
 });
 
 // Slider
@@ -32,6 +31,14 @@ var mySwiper = new Swiper('.slider .swiper-container', {
 	keyboard: true,
 });
 
+// Modal Video
+$('#modalVideo').on('show.bs.modal', function (e) {
+	$(this).find('video')[0].play();
+});
+$('#modalVideo').on('hidden.bs.modal', function (e) {
+	$(this).find('video')[0].pause();
+});
+
 // Manufacturers
 var mySwiper = new Swiper('.manufacturers .swiper-container', {
 	slidesPerView: 3,
@@ -44,13 +51,4 @@ var mySwiper = new Swiper('.manufacturers .swiper-container', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-});
-
-// Modal Video
-$(function(){
-	$('#modalVideo').modal({
-		show: false
-	}).on('hidden.bs.modal', function(){
-		$(this).find('video')[0].pause();
-	});
 });
