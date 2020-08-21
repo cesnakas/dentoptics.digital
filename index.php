@@ -10,7 +10,7 @@ $APPLICATION->SetTitle('Главная');
             <div class="row">
                 <div class="col-4">
                     <div class="slider__video">
-                        <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideo">
+                        <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideoHeader">
                             <span>Смотреть промо</span>
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
                                 <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>

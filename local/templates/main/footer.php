@@ -101,6 +101,27 @@
     </footer>
 
     <!-- modal -->
+    <div class="modal fade" id="modalVideoHeader" data-backdrop="_static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="/video/3d_shape_def.mp4" controls>
+                            <source src="/video/3d_shape_def.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- // -->
     <div class="modal fade" id="modalVideo" data-backdrop="_static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
 

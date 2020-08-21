@@ -4,6 +4,15 @@ if ($('#bx-panel').length) {
 	// $('#catalog-nav').css('z-index','90');
 };
 
+// Modal Video Header
+$(function(){
+	$('#modalVideoHeader').modal({
+		show: false
+	}).on('hidden.bs.modal', function(){
+		$(this).find('video')[0].pause();
+	});
+});
+
 // Slider
 var mySwiper = new Swiper('.slider .swiper-container', {
 	slidesPerView: 2,

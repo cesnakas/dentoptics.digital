@@ -10,14 +10,17 @@
     use Bitrix\Main\Page\Asset;
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    // Bootstrap
+    use Bitrix\Main\UI\Extension;
+    Extension::load('ui.bootstrap');
     // CSS
-    Asset::getInstance()->addCss('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
+    // Asset::getInstance()->addCss('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
 Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.min.css');
     // JS
-    Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
+    // Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js');
-    Asset::getInstance()->addJs('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js');
+    // Asset::getInstance()->addJs('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
 ?>
