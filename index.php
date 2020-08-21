@@ -12,9 +12,9 @@ $APPLICATION->SetTitle('Главная');
                     <div class="slider__video">
                         <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideoHeader">
                             <span>Смотреть промо</span>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
-                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                            <svg width="24" height="24" viewBox="0 0 213.7 213.7">
+                                <path class="triangle" id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M73.5 62.5l75 43.3-75 43.3z"/>
+                                <circle class="circle" id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
                             </svg>
                         </a>
                     </div>
@@ -116,6 +116,13 @@ $APPLICATION->SetTitle('Главная');
             <video poster="/local/templates/main/img/video/video.png" autoplay loop muted>
                 <source src="/video/digital_event_2020.mp4" type="video/mp4">
             </video>
+            <?/*
+            <picture>
+                <source type="image/webp" srcset="<?=SITE_TEMPLATE_PATH;?>/img/webp/2020-digital-event.webp">
+                <source type="image/png" srcset="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png">
+                <img src="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png" alt="Video">
+            </picture>
+            */?>
             <div class="video__overlay">
                 <div class="container-xl">
                     <h3 class="video__headline">#DENTALWORKSHOP</h3>
@@ -123,10 +130,10 @@ $APPLICATION->SetTitle('Главная');
                     <div class="video__play">
                         <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideo">
                             <span>СМОТРЕТЬ</span>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-									<polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
+                            <svg width="48" height="48" viewBox="0 0 213.7 213.7">
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
                                 <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-								</svg>
+                            </svg>
                         </a>
                     </div>
                 </div>
