@@ -12,7 +12,7 @@ $APPLICATION->SetTitle('Главная');
                     <div class="slider__video">
                         <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideoHeader">
                             <span>Смотреть промо</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 213.7 213.7">
+                            <svg width="24" height="24" viewBox="0 0 213.7 213.7">
                                 <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
                                 <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
                             </svg>
@@ -117,9 +117,11 @@ $APPLICATION->SetTitle('Главная');
                 <source src="/video/digital_event_2020.mp4" type="video/mp4">
             </video>
             <?/*
-            <div class="">
-                <img src="<?=SITE_TEMPLATE_PATH:?>/img/webp/2020-digital-event.webp" alt="">
-            </div>
+            <picture>
+                <source type="image/webp" srcset="<?=SITE_TEMPLATE_PATH;?>/img/webp/2020-digital-event.webp">
+                <source type="image/png" srcset="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png">
+                <img src="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png" alt="Video">
+            </picture>
             */?>
             <div class="video__overlay">
                 <div class="container-xl">
@@ -128,8 +130,8 @@ $APPLICATION->SetTitle('Главная');
                     <div class="video__play">
                         <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideo">
                             <span>СМОТРЕТЬ</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 213.7 213.7">
-									<polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
+                            <svg width="48" height="48" viewBox="0 0 213.7 213.7">
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
                                 <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
                             </svg>
                         </a>
