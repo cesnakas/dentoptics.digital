@@ -158,8 +158,9 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 
 $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_THEME'] : '';
 ?>
-
 <div class="bx-catalog-element<?=$themeClass?>" id="<?=$itemIds['ID']?>" itemscope itemtype="http://schema.org/Product">
+    <div class="product__section">
+        <div class="container-xl">
 	<?
 	if ($arParams['DISPLAY_NAME'] === 'Y')
 	{
@@ -403,7 +404,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 													{
 														?>
 														<li class="product-item-detail-properties-item">
-															<span class="product-item-detail-properties-name text-muted"><?=$property['NAME']?></span>
+															<span class="product-item-detail-properties-name"><?=$property['NAME']?></span>
 															<span class="product-item-detail-properties-dots"></span>
 															<span class="product-item-detail-properties-value"><?=(is_array($property['DISPLAY_VALUE'])
 																	? implode(' / ', $property['DISPLAY_VALUE'])
@@ -557,7 +558,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 															{
 																?>
 																<li class="product-item-detail-properties-item">
-																<span class="product-item-detail-properties-name text-muted">
+																<span class="product-item-detail-properties-name">
 																	<?
 																	echo Loc::getMessage(
 																			'CT_BCE_CATALOG_RANGE_FROM',
@@ -767,13 +768,16 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 		</div>
 
 	</div>
+        </div><!-- /conatainer-xl -->
+    </div><!-- /product__section -->
 	<?
 	if ($haveOffers)
 	{
 		if ($arResult['OFFER_GROUP'])
 		{
 			?>
-			<div class="row">
+            <div class="container-xl">
+			    <div class="row">
 				<div class="col">
 					<?
 					foreach ($arResult['OFFER_GROUP_VALUES'] as $offerId)
@@ -809,6 +813,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 					?>
 				</div>
 			</div>
+            </div>
 			<?
 		}
 	}
@@ -817,7 +822,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 		if ($arResult['MODULES']['catalog'] && $arResult['OFFER_GROUP'])
 		{
 			?>
-			<div class="row">
+            <div class="container-xl">
+			    <div class="row">
 				<div class="col">
 					<? $APPLICATION->IncludeComponent(
 						'bitrix:catalog.set.constructor',
@@ -841,12 +847,14 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 					?>
 				</div>
 			</div>
+            </div>
 			<?
 		}
 	}
 	?>
 
-	<div class="row">
+    <div class="container-xl">
+	    <div class="row">
 		<div class="col">
 			<div class="row" id="<?=$itemIds['TABS_ID']?>">
 				<div class="col">
@@ -1050,8 +1058,10 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 		}
 		?>
 	</div>
+    </div>
 
-	<div class="row">
+    <div class="container-xl">
+	    <div class="row">
 		<div class="col">
 			<?
 			if ($arResult['CATALOG'] && $actualItem['CAN_BUY'] && \Bitrix\Main\ModuleManager::isModuleInstalled('sale'))
@@ -1290,8 +1300,9 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 			?>
 		</div>
 	</div>
+    </div>
 
-    <?/*
+
 	<!--Small Card-->
 	<div class="p-2 product-item-detail-short-card-fixed d-none d-md-block" id="<?=$itemIds['SMALL_CARD_PANEL_ID']?>">
 		<div class="product-item-detail-short-card-content-container">
@@ -1412,8 +1423,6 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 			</div>
 		</div>
 	</div>
-    */?>
-    <?/*
 	<!--Top tabs-->
 	<div class="pt-2 pb-0 product-item-detail-tabs-container-fixed d-none d-md-block" id="<?=$itemIds['TABS_PANEL_ID']?>">
 		<ul class="product-item-detail-tabs-list">
@@ -1453,7 +1462,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 			?>
 		</ul>
 	</div>
-    */?>
+
 	<meta itemprop="name" content="<?=$name?>" />
 	<meta itemprop="category" content="<?=$arResult['CATEGORY_PATH']?>" />
 

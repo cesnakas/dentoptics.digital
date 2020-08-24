@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("Каталог продукции");
 ?>
 
     <section class="section product">
-        <div class="container-xl">
+        <!--<div class="container-xl">-->
 
             <?$APPLICATION->IncludeComponent(
                 "bitrix:catalog.element",
@@ -16,10 +16,10 @@ $APPLICATION->SetTitle("Каталог продукции");
                     "ADD_PICT_PROP" => "MORE_PHOTO",
                     "ADD_PROPERTIES_TO_BASKET" => "Y",
                     "ADD_SECTIONS_CHAIN" => "Y",
-                    "ADD_TO_BASKET_ACTION" => array("BUY"),
-                    "ADD_TO_BASKET_ACTION_PRIMARY" => array("BUY"),
+                    "ADD_TO_BASKET_ACTION" => array(0=>"BUY",),
+                    "ADD_TO_BASKET_ACTION_PRIMARY" => array(0=>"BUY",),
                     "BACKGROUND_IMAGE" => "-",
-                    "BASKET_URL" => "/personal/basket.php",
+                    "BASKET_URL" => "/basket/",
                     "BRAND_USE" => "N",
                     "BROWSER_TITLE" => "-",
                     "CACHE_GROUPS" => "Y",
@@ -28,7 +28,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                     "CHECK_SECTION_ID_VARIABLE" => "N",
                     "COMPATIBLE_MODE" => "Y",
                     "CONVERT_CURRENCY" => "N",
-                    "DETAIL_PICTURE_MODE" => array("POPUP", "MAGNIFIER"),
+                    "DETAIL_PICTURE_MODE" => array(0=>"POPUP",1=>"MAGNIFIER",),
                     "DETAIL_URL" => "/catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
                     "DISABLE_INIT_JS_IN_COMPONENT" => "N",
                     "DISPLAY_COMPARE" => "N",
@@ -52,12 +52,12 @@ $APPLICATION->SetTitle("Каталог продукции");
                     "IBLOCK_ID" => "1",
                     "IBLOCK_TYPE" => "CATALOG",
                     "IMAGE_RESOLUTION" => "16by9",
-                    "LABEL_PROP" => array(),
+                    "LABEL_PROP" => "",
                     "LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
                     "LINK_IBLOCK_ID" => "",
                     "LINK_IBLOCK_TYPE" => "",
                     "LINK_PROPERTY_SID" => "",
-                    "MAIN_BLOCK_PROPERTY_CODE" => array("PRICE", "VENDOR_CODE", "MANUFACTURER", "MATERIAL", "SIZE", "TRANSPARENCY", "COLOR", "MORE_PHOTO"),
+                    "MAIN_BLOCK_PROPERTY_CODE" => array(0=>"PRICE",1=>"VENDOR_CODE",2=>"MANUFACTURER",3=>"MATERIAL",4=>"SIZE",5=>"TRANSPARENCY",6=>"COLOR",7=>"MORE_PHOTO",),
                     "MESSAGE_404" => "",
                     "MESS_BTN_ADD_TO_BASKET" => "В корзину",
                     "MESS_BTN_BUY" => "Купить",
@@ -71,7 +71,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                     "META_KEYWORDS" => "-",
                     "OFFERS_LIMIT" => "0",
                     "PARTIAL_PRODUCT_PROPERTIES" => "N",
-                    "PRICE_CODE" => array("PRICE"),
+                    "PRICE_CODE" => array(0=>"PRICE",),
                     "PRICE_VAT_INCLUDE" => "Y",
                     "PRICE_VAT_SHOW_VALUE" => "N",
                     "PRODUCT_ID_VARIABLE" => "id",
@@ -118,7 +118,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                 )
             );?>
 
-        </div>
+        <!--</div>-->
     </section>
 
 <?
