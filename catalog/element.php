@@ -3,12 +3,12 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог продукции");
 ?>
 
-    <section class="section">
+    <section class="section product">
         <div class="container-xl">
 
             <?$APPLICATION->IncludeComponent(
                 "bitrix:catalog.element",
-                "bootstrap_v4",
+                "product",
                 Array(
                     "ACTION_VARIABLE" => "action",
                     "ADD_DETAIL_TO_SLIDER" => "N",
