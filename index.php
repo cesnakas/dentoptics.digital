@@ -144,6 +144,7 @@ $APPLICATION->SetTitle('Главная');
     <!-- /section video -->
 
     <!-- section expendable materials -->
+    <?/* TODO: Вывести инфоблоком данные карточек */?>
     <section class="section materials">
         <div class="container-xl">
             <h3 class="materials__headline">Расходные материалы</h3>
@@ -264,6 +265,7 @@ $APPLICATION->SetTitle('Главная');
     <!-- /section expendable materials -->
 
     <!-- section reviews -->
+    <?/* TODO: Простая верстка для отзывов */?>
     <section class="section reviews">
         <div class="container-xl">
             <div class="row">
