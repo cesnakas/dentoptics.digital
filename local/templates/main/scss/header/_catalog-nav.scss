@@ -17,6 +17,7 @@
     color: #333;
     font-size: 14px;
     font-weight: bold;
+    line-height: 1.75;
     transition: .35s ease-in-out;
 
     &:hover,
@@ -32,6 +33,8 @@
 
       &::before {
         content: '';
+        position: absolute;
+        left: 1.5rem;
         display: inline-flex;
         width: 24px;
         height: 24px;
@@ -45,6 +48,44 @@
       &.selected {
         background-color: inherit;
       }
+
     }
   }
+
+  .dropdown {
+
+    #dropdownMenu {
+      width: 250px;
+      transition: .5s linear;
+    }
+    .dropdown-menu {
+      width: 250px;
+      margin-top: 0;
+      padding: 0;
+      border: 1px solid transparent;
+      border-radius: 0 0 5px 5px;
+      background-color: #f9f9f9;
+      box-shadow: 10px 10px 20px rgba(174,174,192,.25), -10px -10px 30px rgba(255,255,255,.4);
+      transition: .5s linear;
+
+      .dropdown-item {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 2.5;
+        color: #343434;
+
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+
+    &:hover {
+      #dropdownMenu{
+        border-radius: 5px 5px 0 0;
+        background-color: #f9f9f9;
+      }
+    }
+  }
+
 }

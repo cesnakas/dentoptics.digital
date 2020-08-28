@@ -4,6 +4,18 @@ if ($('#bx-panel').length) {
 	// $('#catalog-nav').css('z-index','90');
 };
 
+// Dropdown catalog
+$(function() {
+	$('.dropdown').hover(function() {
+		$(this).addClass('show');
+		$(this).find('.dropdown-menu').addClass('show');
+	},
+	function() {
+		$(this).removeClass('show');
+		$(this).find('.dropdown-menu').removeClass('show');
+	});
+});
+
 // Modal Video Header
 $('#modalVideoHeader').on('show.bs.modal', function (e) {
 	$(this).find('video')[0].play();
