@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="83b39e94-f815-44c5-a986-7639f9ebfc3e" name="dentoptics.digital" url="http://dentoptics.digital">
+        <fileTransfer rootFolder="/www/dentoptics.digital/" host="dentoptics.digital" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
