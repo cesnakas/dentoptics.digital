@@ -170,10 +170,20 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                     <div class="navbar-nav">
 
                         <div class="nav-item dropdown">
-                            <a class="nav-item nav-link" id="dropdownMenu" href="#" data-toggle="dropdown">Каталог</a>
+                            <a class="nav-item nav-link" id="dropdownMenu" href="/catalog/" data-toggle="dropdown">Каталог</a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <!--/test/-->
                                 <a class="dropdown-item" href="/catalog/">Каталог</a>
+                                <div class="dropright">
+                                    <a class="dropdown-item" href="/catalog/">Test</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                        <a class="dropdown-item" href="/catalog/">Test</a>
+                                        <a class="dropdown-item" href="/catalog/">Test</a>
+                                        <a class="dropdown-item" href="/catalog/">Test</a>
+                                    </div>
+                                </div>
+                                <!--/test/-->
                                 <a class="dropdown-item" href="#">CAT/СAM системы</a>
                                 <div class="dropright">
                                     <a class="dropdown-item" href="#">Расходные материалы</a>
