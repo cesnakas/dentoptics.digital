@@ -8,10 +8,11 @@ $APPLICATION->SetTitle("Каталог продукции");
 
             <div class="row">
                 <div class="col-3">
+
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:catalog.smart.filter",
                         "bootstrap_v4",
-                        Array(
+                        array(
                             "CACHE_GROUPS" => "Y",
                             "CACHE_TIME" => "36000000",
                             "CACHE_TYPE" => "A",
@@ -21,11 +22,13 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "FILTER_VIEW_MODE" => "vertical",
                             "HIDE_NOT_AVAILABLE" => "N",
                             "IBLOCK_ID" => "1",
-                            "IBLOCK_TYPE" => "CATALOG",
+                            "IBLOCK_TYPE" => "catalog",
                             "PAGER_PARAMS_NAME" => "arrPager",
                             "POPUP_POSITION" => "right",
                             "PREFILTER_NAME" => "smartPreFilter",
-                            "PRICE_CODE" => array("PRICE"),
+                            "PRICE_CODE" => array(
+                                0 => "PRICE",
+                            ),
                             "SAVE_IN_SESSION" => "N",
                             "SECTION_CODE" => "",
                             "SECTION_DESCRIPTION" => "-",
@@ -33,15 +36,19 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "SECTION_TITLE" => "-",
                             "SEF_MODE" => "N",
                             "TEMPLATE_THEME" => "black",
-                            "XML_EXPORT" => "N"
-                        )
+                            "XML_EXPORT" => "N",
+                            "COMPONENT_TEMPLATE" => "bootstrap_v4"
+                        ),
+                        false
                     );?>
+
                 </div>
                 <div class="col-9">
+
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:catalog.section",
                         "bootstrap_v4",
-                        Array(
+                        array(
                             "ACTION_VARIABLE" => "action",
                             "ADD_PICT_PROP" => "MORE_PHOTO",
                             "ADD_PROPERTIES_TO_BASKET" => "Y",
@@ -76,9 +83,10 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "HIDE_NOT_AVAILABLE" => "N",
                             "HIDE_NOT_AVAILABLE_OFFERS" => "N",
                             "IBLOCK_ID" => "1",
-                            "IBLOCK_TYPE" => "CATALOG",
+                            "IBLOCK_TYPE" => "catalog",
                             "INCLUDE_SUBSECTIONS" => "Y",
-                            "LABEL_PROP" => array(),
+                            "LABEL_PROP" => array(
+                            ),
                             "LAZY_LOAD" => "N",
                             "LINE_ELEMENT_COUNT" => "3",
                             "LOAD_ON_SCROLL" => "N",
@@ -100,7 +108,9 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "PAGER_TITLE" => "Товары",
                             "PAGE_ELEMENT_COUNT" => "20",
                             "PARTIAL_PRODUCT_PROPERTIES" => "N",
-                            "PRICE_CODE" => array("PRICE"),
+                            "PRICE_CODE" => array(
+                                0 => "PRICE",
+                            ),
                             "PRICE_VAT_INCLUDE" => "Y",
                             "PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
                             "PRODUCT_ID_VARIABLE" => "id",
@@ -108,7 +118,16 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "PRODUCT_QUANTITY_VARIABLE" => "quantity",
                             "PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false}]",
                             "PRODUCT_SUBSCRIPTION" => "Y",
-                            "PROPERTY_CODE_MOBILE" => array("PRICE","VENDOR_CODE","MANUFACTURER","MATERIAL","SIZE","TRANSPARENCY","COLOR","MORE_PHOTO"),
+                            "PROPERTY_CODE_MOBILE" => array(
+                                0 => "PRICE",
+                                1 => "MORE_PHOTO",
+                                2 => "VENDOR_CODE",
+                                3 => "MANUFACTURER",
+                                4 => "MATERIAL",
+                                5 => "SIZE",
+                                6 => "TRANSPARENCY",
+                                7 => "COLOR",
+                            ),
                             "RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
                             "RCM_TYPE" => "personal",
                             "SECTION_CODE" => $_REQUEST["SECTION_CODE"],
@@ -116,7 +135,10 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "SECTION_ID" => "",
                             "SECTION_ID_VARIABLE" => "SECTION_ID",
                             "SECTION_URL" => "/catalog/#SECTION_CODE#/",
-                            "SECTION_USER_FIELDS" => array("",""),
+                            "SECTION_USER_FIELDS" => array(
+                                0 => "",
+                                1 => "",
+                            ),
                             "SEF_MODE" => "Y",
                             "SEF_RULE" => "/catalog/#SECTION_CODE#/",
                             "SET_BROWSER_TITLE" => "Y",
@@ -140,9 +162,12 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "USE_ENHANCED_ECOMMERCE" => "N",
                             "USE_MAIN_ELEMENT_SECTION" => "N",
                             "USE_PRICE_COUNT" => "N",
-                            "USE_PRODUCT_QUANTITY" => "N"
-                        )
+                            "USE_PRODUCT_QUANTITY" => "N",
+                            "COMPONENT_TEMPLATE" => "bootstrap_v4"
+                        ),
+                        false
                     );?>
+
                 </div>
             </div>
 
