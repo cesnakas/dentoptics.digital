@@ -48,6 +48,19 @@
       box-shadow: 0 5px 15px rgba(0,0,0,.25);
     }
 
+    &-compare {
+      width: 60px;
+      height: 30px;
+      border: 1px solid;
+      border-radius: 5px;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,.25);
+      label {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
   }
 
   &-item-detail-short-card-fixed.active {

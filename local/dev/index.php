@@ -7,12 +7,20 @@ $APPLICATION->SetTitle("");
 	<div class="container-xl">
 
         <?$APPLICATION->IncludeComponent(
-            "bitrix:main.auth.form",
-            "",
+            "bitrix:menu",
+            "catalog",
             Array(
-                "AUTH_FORGOT_PASSWORD_URL" => "",
-                "AUTH_REGISTER_URL" => "",
-                "AUTH_SUCCESS_URL" => ""
+                "ALLOW_MULTI_SELECT" => "Y",
+                "CHILD_MENU_TYPE" => "global",
+                "DELAY" => "N",
+                "MAX_LEVEL" => "3",
+                "MENU_CACHE_GET_VARS" => array(0=>"",),
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_TYPE" => "A",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "MENU_THEME" => "site",
+                "ROOT_MENU_TYPE" => "global",
+                "USE_EXT" => "N"
             )
         );?>
 		
