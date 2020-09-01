@@ -6,25 +6,24 @@ if ($('#bx-panel').length) {
 
 // Dropdown catalog
 $(function() {
-	$('.dropdown').hover(function() {
-		$(this).addClass('show');
-		// $(this).find('.dropdown-menu').addClass('show');
-		$('.dropdown > .dropdown-menu').addClass('show');
-	},
-	function() {
-		$(this).removeClass('show');
-		$(this).find('.dropdown-menu').removeClass('show');
-	});
-});
-//
-$(function () {
-	$('.dropright').hover(function () {
-		//$(this).addClass('show');
-		$('.dropright > .dropdown-menu').addClass('show');
-	},
-	function() {
-		$('.dropright > .dropdown-menu').removeClass('show');
-	});
+	$('.dropdown').hover(
+		function() {
+			$(this).addClass('show');
+			$(this).find('#dropdownMenu ~ .dropdown-menu').addClass('show');
+		},
+		function() {
+			$(this).removeClass('show');
+			$(this).find('#dropdownMenu ~ .dropdown-menu').removeClass('show');
+		});
+	$('.dropright').hover(
+		function() {
+			$(this).addClass('show');
+			$(this).find('.dropdown-menu').addClass('show');
+		},
+		function() {
+			$(this).removeClass('show');
+			$(this).find('.dropdown-menu').removeClass('show');
+		});
 });
 
 // Modal Video Header
