@@ -751,12 +751,10 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 							?>
 							<div class="product-item-detail-compare-container">
 								<div class="product-item-detail-compare">
-									<div class="checkbox">
-										<label class="m-0" id="<?=$itemIds['COMPARE_LINK']?>">
-											<input type="checkbox" data-entity="compare-checkbox">
-											<span class="sr-only" data-entity="compare-title"><?=$arParams['MESS_BTN_COMPARE']?></span>
-										</label>
-									</div>
+                                    <label class="m-0" id="<?=$itemIds['COMPARE_LINK']?>">
+                                        <input type="checkbox" data-entity="compare-checkbox">
+                                        <span class="sr-only" data-entity="compare-title"><?=$arParams['MESS_BTN_COMPARE']?></span>
+                                    </label>
 								</div>
 							</div>
 							<?

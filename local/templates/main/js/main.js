@@ -77,5 +77,6 @@ var mySwiper = new Swiper('.manufacturers .swiper-container', {
 
 // Compare
 $('.product-item-detail-compare label').on('click', function() {
-	$('.product-item-detail-compare').toggleClass('active');
+	// $('.product-item-detail-compare').toggleClass('active');
+	$(this).toggleClass('active');
 });
