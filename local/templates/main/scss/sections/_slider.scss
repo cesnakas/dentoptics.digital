@@ -29,6 +29,16 @@
     span {
       font-size: 3rem;
     }
+    .playBut {
+      position: relative;
+      top: 12px;
+      display: inline-flex;
+      margin-left: 1.5rem;
+      color: #d02146;
+      svg {
+        margin-left: 0;
+      }
+    }
   }
   
   &__lead {

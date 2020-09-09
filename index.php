@@ -9,19 +9,19 @@ $APPLICATION->SetTitle('Главная');
 
             <div class="row">
                 <div class="col-4">
-                    <div class="slider__video">
-                        <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideoHeader">
-                            <span>Смотреть промо</span>
-                            <svg width="24" height="24" viewBox="0 0 213.7 213.7">
-                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
-                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-                            </svg>
-                        </a>
-                    </div>
+                    <div class="slider__video"></div>
                     <h3 class="slider__headline">
                         CAD/СAM
                         <br>
                         <span>системы</span>
+
+                        <a class="playBut" href="#" data-toggle="modal" data-target="#modalVideoHeader">
+                            <svg width="48" height="48" viewBox="0 0 213.7 213.7">
+                                <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1 "/>
+                                <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+                            </svg>
+                        </a>
+
                     </h3>
                     <p class="slider__lead">Мы предлагаем интраоральные сканеры, фрезерные станки, 3D принтеры ведущих мировых производителей.</p>
                     <p class="slider__lead">DentOptics digital работает только напрямую с заводами - производителями, имея прямые контракты, а значит - лучшие цены и официальный сервис.</p>
@@ -68,7 +68,7 @@ $APPLICATION->SetTitle('Главная');
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">
                                     <a href="#">
-                                        <h4 class="h4">Фрезы</h4>
+                                        <h4 class="h4">Фрезерные <br> станки</h4>
                                     </a>
                                 </div>
                                 <div class="swiper-slide-img">
@@ -116,13 +116,6 @@ $APPLICATION->SetTitle('Главная');
             <video poster="/local/templates/main/img/video/video.png" autoplay loop muted>
                 <source src="/video/digital_event_2020.mp4" type="video/mp4">
             </video>
-            <?/*
-            <picture>
-                <source type="image/webp" srcset="<?=SITE_TEMPLATE_PATH;?>/img/webp/2020-digital-event.webp">
-                <source type="image/png" srcset="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png">
-                <img src="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png" alt="Video">
-            </picture>
-            */?>
             <div class="video__overlay">
                 <div class="container-xl">
                     <h3 class="video__headline">#DENTALWORKSHOP</h3>
@@ -323,7 +316,7 @@ $APPLICATION->SetTitle('Главная');
                         </figcaption>
                     </figure>
                     <hr class="about__hr">
-                    <p>Покупая инновационное оборудование, вы не только приятно удивите вашего пациента, но и ускорите, без потери качества, время лечения</p>
+                    <p>Покупая инновационное оборудование, вы делаете ценную инвестицию в себя и свою практику</p>
                 </div>
                 <!-- // -->
                 <div class="w-100 my-4"></div>

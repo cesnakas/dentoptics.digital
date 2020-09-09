@@ -9,7 +9,7 @@
     // Bitrix
     use Bitrix\Main\Page\Asset;
     // Meta
-    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    Asset::getInstance()->addString('<meta name="viewport" content="width=1440, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // Bootstrap
     use Bitrix\Main\UI\Extension;
     Extension::load('ui.bootstrap');
@@ -116,11 +116,11 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <div class="col-4 header_info">
                     <div>
                         <div>
-                            <a href="tel:">8 (495) 796 24 10</a>
+                            <a href="tel:+79031302440">8 (903) 130 24 40 (Максим)</a>
                             - с 10:00 до 20:00 часов по будням
                         </div>
                         <div>
-                            <a href="tel:">8 (800) 100 23 83</a>
+                            <a href="tel:+78660157063">8 (866) 015 70 63 (Елена)</a>
                             - горячая линия c 8:00 до 17:00
                         </div>
                     </div>
