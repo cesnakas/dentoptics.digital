@@ -8,7 +8,8 @@ CJSCore::Init();
         ShowMessage($arResult['ERROR_MESSAGE']);
     ?>
 
-    <?if($arResult["FORM_TYPE"] == "login"):?>
+<?if($arResult["FORM_TYPE"] == "login"):?>
+
     <form name="system_auth_form<?=$arResult["RND"]?>" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
 
         <?if($arResult["BACKURL"] <> ''):?>
@@ -109,6 +110,63 @@ CJSCore::Init();
         <?endif;?>
 
     </form>
-    <?endif;?>
+
+    <?if($arResult["AUTH_SERVICES"]):?>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:socserv.auth.form",
+            "",
+            array(
+                "AUTH_SERVICES"=>$arResult["AUTH_SERVICES"],
+                "AUTH_URL"=>$arResult["AUTH_URL"],
+                "POST"=>$arResult["POST"],
+                "POPUP"=>"Y",
+                "SUFFIX"=>"form",
+            ),
+            $component,
+            array("HIDE_ICONS"=>"Y")
+        );?>
+    <?endif?>
+
+<?elseif($arResult["FORM_TYPE"] == "otp"):?>
+
+    <form name="system_auth_form<?=$arResult["RND"]?>" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
+
+        <?if($arResult["BACKURL"] <> ''):?>
+        <input type="hidden" name="backurl" value="<?=$arResult["BACKURL"]?>">
+        <?endif;?>
+
+        <input type="hidden" name="AUTH_FORM" value="Y">
+        <input type="hidden" name="TYPE" value="OTP">
+
+        // TODO: остановился тут
+        <?echo GetMessage("auth_form_comp_otp")?>
+        <input type="text" name="USER_OTP" maxlength="50" value="" size="17" autocomplete="off">
+
+    </form>
+
+<?else:?>
+
+    <form action="<?=$arResult["AUTH_URL"]?>">
+        <table width="95%">
+            <tr>
+                <td align="center">
+                    <?=$arResult["USER_NAME"]?><br />
+                    [<?=$arResult["USER_LOGIN"]?>]<br />
+                    <a href="<?=$arResult["PROFILE_URL"]?>" title="<?=GetMessage("AUTH_PROFILE")?>"><?=GetMessage("AUTH_PROFILE")?></a><br />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <?foreach ($arResult["GET"] as $key => $value):?>
+                        <input type="hidden" name="<?=$key?>" value="<?=$value?>" />
+                    <?endforeach?>
+                    <input type="hidden" name="logout" value="yes" />
+                    <input type="submit" name="logout_butt" value="<?=GetMessage("AUTH_LOGOUT_BUTTON")?>" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<?endif;?>
 
 </div>
