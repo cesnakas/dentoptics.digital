@@ -25,7 +25,6 @@ CJSCore::Init();
 
         <div class="form-group">
             <label for="userLogin"><?=GetMessage("AUTH_LOGIN")?>:</label>
-            <?/*<input type="text" name="USER_LOGIN" maxlength="50" value="" size="17" />*/?>
             <input name="USER_LOGIN" type="text" class="form-control" id="userLogin" aria-describedby="userLoginHelp">
             <script>
                 BX.ready(function() {
@@ -38,12 +37,11 @@ CJSCore::Init();
                     }
                 });
             </script>
-            <small class="form-text text-muted" id="userLoginHelp">Логин должен быть не менее 2 символов длиной.</small>
+            <!--<small class="form-text text-muted" id="userLoginHelp">Логин должен быть не менее 3 символов длиной.</small>-->
         </div>
 
         <div class="form-group">
             <label for="userPassword"><?=GetMessage("AUTH_PASSWORD")?>:</label>
-            <?/*<input type="password" name="USER_PASSWORD" maxlength="255" size="17" autocomplete="off" />*/?>
             <input name="USER_PASSWORD" type="password" class="form-control" id="userPassword" autocomplete="off" aria-describedby="userPasswordHelp">
             <?/*if($arResult["SECURE_AUTH"]):?>
                 <span class="bx-auth-secure" id="bx_auth_secure<?=$arResult["RND"]?>" title="<?echo GetMessage("AUTH_SECURE_NOTE")?>" style="display:none">
@@ -58,13 +56,13 @@ CJSCore::Init();
                     document.getElementById('bx_auth_secure<?=$arResult["RND"]?>').style.display = 'inline-block';
                 </script>
             <?endif*/?>
-            <small class="form-text text-muted" id="userPasswordHelp">Пароль должен быть не менее 6 символов длиной.</small>
+            <!--<small class="form-text text-muted" id="userPasswordHelp">Пароль должен быть не менее 6 символов длиной.</small>-->
         </div>
 
         <?if ($arResult["STORE_PASSWORD"] == "Y"):?>
-        <div class="form-group form-check">
-            <input name="USER_REMEMBER" type="checkbox" class="form-check-input" id="USER_REMEMBER_frm" value="Y">
-            <label class="form-check-label" for="USER_REMEMBER_frm" title="<?=GetMessage("AUTH_REMEMBER_ME")?>">
+        <div class="form-group custom-control custom-checkbox">
+            <input name="USER_REMEMBER" type="checkbox" class="custom-control-input" id="USER_REMEMBER_frm" value="Y">
+            <label class="custom-control-label" for="USER_REMEMBER_frm" title="<?=GetMessage("AUTH_REMEMBER_ME")?>">
                 <?echo GetMessage("AUTH_REMEMBER_SHORT")?>
             </label>
         </div>
@@ -80,16 +78,18 @@ CJSCore::Init();
         <?endif;?>
 
         <div class="form-group">
-            <input type="submit" name="Login" class="btn btn-primary" value="<?=GetMessage('AUTH_LOGIN_BUTTON')?>">
+            <input type="submit" name="Login" class="btn btn-block btn-primary" value="<?=GetMessage('AUTH_LOGIN_BUTTON')?>">
+        </div>
 
-            <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
+        <?if($arResult["NEW_USER_REGISTRATION"] == "Y"):?>
+        <small class="form-text mb-3 text-center">
             <noindex>
-                <a class="btn btn-outline-primary ml-2" href="<?=$arResult["AUTH_REGISTER_URL"]?>" rel="nofollow">
+                <a class="text-muted" href="<?=$arResult["AUTH_REGISTER_URL"]?>" rel="nofollow">
                     <?=GetMessage("AUTH_REGISTER")?>
                 </a>
             </noindex>
-            <?endif;?>
-        </div>
+        </small>
+        <?endif;?>
 
         <?if($arResult["AUTH_SERVICES"]):?>
         <div class="form-group">
@@ -138,15 +138,17 @@ CJSCore::Init();
         <input type="hidden" name="AUTH_FORM" value="Y">
         <input type="hidden" name="TYPE" value="OTP">
 
-        // TODO: остановился тут
-        <?echo GetMessage("auth_form_comp_otp")?>
-        <input type="text" name="USER_OTP" maxlength="50" value="" size="17" autocomplete="off">
+        <div class="form-group">
+            <label for="compOtp"><?echo GetMessage("auth_form_comp_otp")?></label>
+            <input type="text" name="USER_OTP" class="form-control" id="compOtp" maxlength="50" value="" size="17" autocomplete="off">
+        </div>
 
     </form>
 
 <?else:?>
 
     <form action="<?=$arResult["AUTH_URL"]?>">
+
         <table width="95%">
             <tr>
                 <td align="center">
@@ -165,6 +167,7 @@ CJSCore::Init();
                 </td>
             </tr>
         </table>
+
     </form>
 
 <?endif;?>
