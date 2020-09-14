@@ -133,14 +133,17 @@ if($arResult["SHOW_SMS_FIELD"] == true)
 
             <?else:?>
 
-                <label for=""><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?></label>
+        <div class="form-group">
+            <label for="form<?=$FIELD?>">
+                <?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?>
+            </label>
 
         <?
         switch ($FIELD) {
         case "PASSWORD":
         ?>
 
-        <input size="30" type="password" name="REGISTER[<?=$FIELD?>]" class="form-control" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off">
+            <input type="password" name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off">
 
             <?if($arResult["SECURE_AUTH"]):?>
                 <span class="bx-auth-secure" id="bx_auth_secure" title="<?=GetMessage("AUTH_SECURE_NOTE")?>" style="display:none">
@@ -158,17 +161,19 @@ if($arResult["SHOW_SMS_FIELD"] == true)
 
         <?
         break;
+
         case "CONFIRM_PASSWORD":
         ?>
 
-            <input size="30" type="password" name="REGISTER[<?=$FIELD?>]" class="form-control" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off">
+            <input type="password" name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off">
 
         <?
         break;
+
         case "PERSONAL_GENDER":
         ?>
 
-            <select name="REGISTER[<?=$FIELD?>]" class="form-control">
+            <select name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>">
                 <option value=""><?=GetMessage("USER_DONT_KNOW")?></option>
                 <option value="M"<?=$arResult["VALUES"][$FIELD] == "M" ? " selected=\"selected\"" : ""?>><?=GetMessage("USER_MALE")?></option>
                 <option value="F"<?=$arResult["VALUES"][$FIELD] == "F" ? " selected=\"selected\"" : ""?>><?=GetMessage("USER_FEMALE")?></option>
@@ -176,11 +181,12 @@ if($arResult["SHOW_SMS_FIELD"] == true)
 
         <?
         break;
+
         case "PERSONAL_COUNTRY":
         case "WORK_COUNTRY":
         ?>
 
-            <select name="REGISTER[<?=$FIELD?>]">
+            <select name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>">
             <?foreach ($arResult["COUNTRIES"]["reference_id"] as $key => $value) {?>
                 <option value="<?=$value?>"<?if ($value == $arResult["VALUES"][$FIELD]):?> selected="selected"<?endif?>>
                     <?=$arResult["COUNTRIES"]["reference"][$key]?>
@@ -189,15 +195,116 @@ if($arResult["SHOW_SMS_FIELD"] == true)
             </select>
 
         <?
+        break;
+
+        case "PERSONAL_NOTES":
+        case "WORK_NOTES":
+        ?>
+
+            <textarea cols="30" rows="5" name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>">
+                <?=$arResult["VALUES"][$FIELD]?>
+            </textarea>
+
+        <?
+        break;
+
+        default:
+        ?>
+
+            <?
+            if ($FIELD == "PERSONAL_BIRTHDAY"):?>
+
+            <small><?=$arResult["DATE_FORMAT"]?></small><br /><?endif;?>
+
+            <input type="text" name="REGISTER[<?=$FIELD?>]" class="form-control" id="form<?=$FIELD?>" value="<?=$arResult["VALUES"][$FIELD]?>">
+
+            <?if ($FIELD == "PERSONAL_BIRTHDAY")
+                $APPLICATION->IncludeComponent(
+                    'bitrix:main.calendar',
+                    '',
+                    array(
+                        'SHOW_INPUT' => 'N',
+                        'FORM_NAME' => 'regform',
+                        'INPUT_NAME' => 'REGISTER[PERSONAL_BIRTHDAY]',
+                        'SHOW_TIME' => 'N'
+                    ),
+                    null,
+                    array("HIDE_ICONS"=>"Y")
+                );?>
+
+        <?
         }
         ?>
+
+        </div>
 
             <?endif;?>
         <?endforeach;?>
 
+        <?/* ********** user properties ********** */?>
+
+        <?if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"):?>
+        <div class="form-group">
+
+            <div><?=strlen(trim($arParams["USER_PROPERTY_NAME"])) > 0 ? $arParams["USER_PROPERTY_NAME"] : GetMessage("USER_TYPE_EDIT_TAB")?></div>
+
+            <?foreach ($arResult["USER_PROPERTIES"]["DATA"] as $FIELD_NAME => $arUserField):?>
+
+
+                    <label><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></label>
+
+                    <div>
+
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:system.field.edit",
+                        $arUserField["USER_TYPE"]["USER_TYPE_ID"],
+                        array(
+                            "bVarsFromForm" => $arResult["bVarsFromForm"],
+                            "arUserField" => $arUserField,
+                            "form_name" => "regform"
+                        ),
+                        null, array(
+                            "HIDE_ICONS" => "Y"
+                        )
+                    );?>
+
+                    </div>
+
+            <?endforeach;?>
+
+        </div>
+        <?endif;?>
+
+        <?/* ********** /user properties ********** */?>
+
+        <?
+        /* captcha */
+        if ($arResult["USE_CAPTCHA"] == "Y") { ?>
+        <div class="form-group">
+
+            <div class="form-text text-muted mb-2">
+                <b><?=GetMessage("REGISTER_CAPTCHA_TITLE")?></b>
+            </div>
+
+            <input type="hidden" name="captcha_sid" value="<?=$arResult["CAPTCHA_CODE"]?>"/>
+
+            <img class="d-block mb-3 rounded" src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["CAPTCHA_CODE"]?>" width="180" height="40" alt="CAPTCHA">
+
+            <label for="captchaWord"><?=GetMessage("REGISTER_CAPTCHA_PROMT")?>:<span class="starrequired">*</span></label>
+            <input type="text" name="captcha_word" class="form-control" id="captchaWord" value="" autocomplete="off">
+
+        </div>
+        <? }
+        /* /captcha */
+        ?>
+
     </form>
 
+    <p><?=$arResult["GROUP_POLICY"]["PASSWORD_REQUIREMENTS"];?></p>
+
     <?endif;?>
+
+    <p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
 
 <?endif;?>
 
