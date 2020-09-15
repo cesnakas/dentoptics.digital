@@ -298,6 +298,10 @@ if($arResult["SHOW_SMS_FIELD"] == true)
         /* /captcha */
         ?>
 
+        <div class="form-group">
+            <input type="submit" name="register_submit_button" class="btn btn-block btn-primary" value="<?=GetMessage("AUTH_REGISTER")?>">
+        </div>
+
     </form>
 
     <p><?=$arResult["GROUP_POLICY"]["PASSWORD_REQUIREMENTS"];?></p>
