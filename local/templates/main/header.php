@@ -174,21 +174,21 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                             <a class="nav-item nav-link" id="dropdownMenu" href="/catalog/" data-toggle="dropdown">Каталог</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu">
 
-                                <a class="dropdown-item" href="/catalog/">Каталог</a>
+                                <!--<a class="dropdown-item" href="/catalog/">Каталог</a>-->
 
-                                <a class="dropdown-item" href="#">CAT/СAM системы</a>
+                                <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
                                 <div class="dropright">
-                                    <a class="dropdown-item" href="#">Расходные материалы</a>
+                                    <a class="dropdown-item" href="/catalog/consumables/">Расходные материалы</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                        <a class="dropdown-item" href="#">Диски</a>
-                                        <a class="dropdown-item" href="#">Блоки</a>
-                                        <a class="dropdown-item" href="#">Фрезы</a>
-                                        <a class="dropdown-item" href="#">3D печать</a>
-                                        <a class="dropdown-item" href="#">Аксессуары</a>
-                                        <a class="dropdown-item" href="#">Красители</a>
+                                        <a class="dropdown-item" href="/catalog/">Диски</a>
+                                        <a class="dropdown-item" href="/catalog/">Блоки</a>
+                                        <a class="dropdown-item" href="/catalog/">Фрезы</a>
+                                        <a class="dropdown-item" href="/catalog/">3D печать</a>
+                                        <a class="dropdown-item" href="/catalog/">Аксессуары</a>
+                                        <a class="dropdown-item" href="/catalog/">Красители</a>
                                     </div>
                                 </div>
-                                <a class="dropdown-item" href="#">Программное обеспечение</a>
+                                <a class="dropdown-item" href="/catalog/software/">Программное обеспечение</a>
 
                             </div>
                         </div>
