@@ -258,7 +258,6 @@ $APPLICATION->SetTitle('DentOptics');
     <!-- /section expendable materials -->
 
     <!-- section reviews -->
-    <?/* TODO: Простая верстка для отзывов */?>
     <section class="section reviews">
         <div class="container-xl">
             <div class="row">
@@ -267,6 +266,63 @@ $APPLICATION->SetTitle('DentOptics');
                 </div>
                 <div class="col-10">
                     <div class="reviews__slider">
+
+                        <div class="reviews__items swiper-container">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews__item">
+                                    <p class="mt-5 text-center">«Спасибо команде DentOptics Digital и лично Ивану Голякову, за чёткую и слаженную работу по поставке и монтажу этого симпатичного японца»</p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid rounded" src="<?=SITE_TEMPLATE_PATH;?>/img/reviews/ava-review-1.svg" loading="lazy" alt="...">
+                                        <figcaption class="figure-caption">
+                                            <b>Игорь Мяскивкер</b>
+                                            <p>руководитель зуботехнической лаборатории Edelweiss.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide reviews__item">
+                                    <p class="mt-5 text-center">CEREC от Dentsply Sirona для врача общего профиля – уникальная машина! Она дает свободу и автономность. Я приобрел комплект CEREC в 2017 году: интраоральный сканер Omnicam и шлифовальный аппарат MC XL. Сейчас я уже практически не нуждаюсь в услугах зуботехнической лаборатории, если дело не касается съемного протезирования. Одиночные реставрации я делаю самостоятельно на CEREC.</p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid rounded" src="<?=SITE_TEMPLATE_PATH;?>/img/reviews/ava-review-2.svg" loading="lazy" alt="...">
+                                        <figcaption class="figure-caption">
+                                            <b>Рауф Алиев</b>
+                                            <p>врач-стоматолог общей практики, главный врач стоматологической клиники «Прима».</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide reviews__item">
+                                    <p class="mt-5 text-center">«Спасибо команде DentOptics Digital и лично Ивану Голякову, за чёткую и слаженную работу по поставке и монтажу этого симпатичного японца»</p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid rounded" src="<?=SITE_TEMPLATE_PATH;?>/img/reviews/ava-review-1.svg" loading="lazy" alt="...">
+                                        <figcaption class="figure-caption">
+                                            <b>Игорь Мяскивкер</b>
+                                            <p>руководитель зуботехнической лаборатории Edelweiss.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="swiper-slide reviews__item">
+                                    <p class="mt-5 text-center">CEREC от Dentsply Sirona для врача общего профиля – уникальная машина! Она дает свободу и автономность. Я приобрел комплект CEREC в 2017 году: интраоральный сканер Omnicam и шлифовальный аппарат MC XL. Сейчас я уже практически не нуждаюсь в услугах зуботехнической лаборатории, если дело не касается съемного протезирования. Одиночные реставрации я делаю самостоятельно на CEREC.</p>
+                                    <figure class="figure">
+                                        <img class="figure-img img-fluid rounded" src="<?=SITE_TEMPLATE_PATH;?>/img/reviews/ava-review-2.svg" loading="lazy" alt="...">
+                                        <figcaption class="figure-caption">
+                                            <b>Рауф Алиев</b>
+                                            <p>врач-стоматолог общей практики, главный врач стоматологической клиники «Прима».</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                            </div>
+                            <!-- arrows -->
+                            <div class="swiper-button-next swiper-button-black">
+                                <img src="/local/templates/main/img/svg/slide-right.svg" alt="">
+                            </div>
+                            <div class="swiper-button-prev swiper-button-black">
+                                <img src="/local/templates/main/img/svg/slide-left.svg" alt="">
+                            </div>
+                        </div>
 
                     </div>
                 </div>

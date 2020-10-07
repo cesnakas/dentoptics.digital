@@ -75,6 +75,21 @@ var mySwiper = new Swiper('.manufacturers .swiper-container', {
 	},
 });
 
+// Reviews
+var mySwiper = new Swiper('.reviews__slider .swiper-container', {
+	slidesPerView: 2,
+	spaceBetween: 0,
+	loop: true,
+	autoplay: {
+		delay: 3500,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
 // Compare
 $('.product-item-detail-compare label').on('click', function() {
 	// $('.product-item-detail-compare').toggleClass('active');
