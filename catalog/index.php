@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_URI"] == '/catalog/') {
                     "SECTION_BACKGROUND_IMAGE" => "-",
                     "SECTION_COUNT_ELEMENTS" => "Y",
                     "SECTION_ID_VARIABLE" => "SECTION_ID",
-                    "SECTION_TOP_DEPTH" => "2",
+                    "SECTION_TOP_DEPTH" => "3",
                     "SEF_FOLDER" => "/catalog/",
                     "SEF_MODE" => "Y",
                     "SEF_URL_TEMPLATES" => array("sections"=>"","section"=>"#SECTION_CODE#/","element"=>"#SECTION_CODE#/#ELEMENT_CODE#/","compare"=>"compare.php?action=#ACTION_CODE#","smart_filter"=>"#SECTION_CODE#/filter/#SMART_FILTER_PATH#/apply/",),

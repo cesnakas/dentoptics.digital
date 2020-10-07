@@ -708,6 +708,7 @@
 	padding: 4px 15px;
 	min-height: 30px;
 	border-top: 1px solid #e6e6e6;
+	border-radius: 0 0 20px 20px;
 	background: #f3f3f3;
 	box-shadow: inset 0 1px 1px 0 #eee;
 	vertical-align: middle;
@@ -857,7 +858,10 @@
 /*Buttons*/
 .product-item-button-container { text-align: center; }
 
-.product-item-button-container .btn { margin-bottom: 2px; }
+.product-item-button-container .btn {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
 
 /*Stickers*/
 .product-item-sticker,
