@@ -180,12 +180,12 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                                 <div class="dropright">
                                     <a class="dropdown-item" href="/catalog/consumables/">Расходные материалы</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                        <a class="dropdown-item" href="/catalog/">Диски</a>
-                                        <a class="dropdown-item" href="/catalog/">Блоки</a>
-                                        <a class="dropdown-item" href="/catalog/">Фрезы</a>
-                                        <a class="dropdown-item" href="/catalog/">3D печать</a>
-                                        <a class="dropdown-item" href="/catalog/">Аксессуары</a>
-                                        <a class="dropdown-item" href="/catalog/">Красители</a>
+                                        <a class="dropdown-item" href="/catalog/disks/">Диски</a>
+                                        <a class="dropdown-item" href="/catalog/blocks/">Блоки</a>
+                                        <a class="dropdown-item" href="/catalog/cutters/">Фрезы</a>
+                                        <a class="dropdown-item" href="/catalog/3d-printing/">3D печать</a>
+                                        <a class="dropdown-item" href="/catalog/accessories/">Аксессуары</a>
+                                        <a class="dropdown-item" href="/catalog/dye/">Красители</a>
                                     </div>
                                 </div>
                                 <a class="dropdown-item" href="/catalog/software/">Программное обеспечение</a>
