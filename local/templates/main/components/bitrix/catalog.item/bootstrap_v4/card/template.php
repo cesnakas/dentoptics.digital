@@ -23,7 +23,7 @@ use \Bitrix\Main\Localization\Loc;
  */
 ?>
 
-<div class="product-item">
+<div class="product-item mb-4">
 	<? if ($itemHasDetailUrl): ?>
 	<a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
 		data-entity="image-wrapper">
@@ -115,7 +115,7 @@ use \Bitrix\Main\Localization\Loc;
 <? else: ?>
 	</span>
 <? endif; ?>
-	<h3 class="product-item-title">
+	<h3 class="product-item-title px-3">
 		<? if ($itemHasDetailUrl): ?>
 		<a href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$productTitle?>">
 			<? endif; ?>
