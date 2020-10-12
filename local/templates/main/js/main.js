@@ -95,3 +95,12 @@ $('.product-item-detail-compare label').on('click', function() {
 	// $('.product-item-detail-compare').toggleClass('active');
 	$(this).toggleClass('active');
 });
+
+//Спойлеры в обучении
+$('.trainingSpoilers').click(function(){
+	let a = '#' + $(this).attr('data-id');
+	$(a).slideToggle(200);
+	let b = $(this).find('.trainingStatus > b');
+	b.text( b.text() == '+' ? "-" : "+");
+});
+$('.trainingContentList').toggle();
