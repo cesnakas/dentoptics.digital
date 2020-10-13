@@ -35,7 +35,8 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "SECTION_ID" => $_REQUEST["SECTION_ID"],
                             "SECTION_TITLE" => "-",
                             "SEF_MODE" => "Y",
-                            "SEF_RULE" => "#SECTION_CODE#/#SECTION_CODE_PATH#/#SMART_FILTER_PATH#/",
+                            "SEF_RULE" => '',
+                            // "SEF_RULE" => "/catalog/#SECTION_CODE#/filter/#SMART_FILTER_PATH#/apply/",
                             "SMART_FILTER_PATH" => $_REQUEST["SMART_FILTER_PATH"],
                             "TEMPLATE_THEME" => "blue",
                             "XML_EXPORT" => "N"
