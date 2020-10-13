@@ -180,6 +180,9 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                                     <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
                                         <a class="dropdown-item" href="/catalog/ioscans/">Интраоральные сканеры</a>
+                                        <a class="dropdown-item" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
+                                        <a class="dropdown-item" href="/catalog/labscans/">Лабораторные сканеры</a>
+                                        <!--<a class="dropdown-item" href="/catalog/milling/">Фрезеры</a>-->
                                     </div>
                                 </div>
                                 <!-- // -->
