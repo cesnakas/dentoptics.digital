@@ -1,11 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог продукции");
-/*
+
 if ($_SERVER["REQUEST_URI"] == '/catalog/') {
-    LocalRedirect('/catalog/section.php');
+    LocalRedirect('/');
 }
-*/
 ?>
 
     <section class="section">
@@ -178,7 +177,7 @@ if ($_SERVER["REQUEST_URI"] == '/catalog/') {
                     "SIDEBAR_PATH" => "",
                     "SIDEBAR_SECTION_POSITION" => "left",
                     "SIDEBAR_SECTION_SHOW" => "Y",
-                    "TEMPLATE_THEME" => "blue",
+                    "TEMPLATE_THEME" => "red",
                     "TOP_ADD_TO_BASKET_ACTION" => "ADD",
                     "TOP_ELEMENT_COUNT" => "20",
                     "TOP_ELEMENT_SORT_FIELD" => "SCALED_PRICE_1",
