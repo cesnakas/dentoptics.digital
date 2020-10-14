@@ -95,10 +95,10 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                         <!-- arrows -->
                         <div class="swiper-button-next swiper-button-black">
-                            <img src="/local/templates/main/img/svg/slide-right.svg" alt="">
+                            <img src="/local/templates/main/img/svg/slide-right.svg" loading="lazy" alt="">
                         </div>
                         <div class="swiper-button-prev swiper-button-black">
-                            <img src="/local/templates/main/img/svg/slide-left.svg" alt="">
+                            <img src="/local/templates/main/img/svg/slide-left.svg" loading="lazy" alt="">
                         </div>
                     </div>
 
@@ -317,10 +317,10 @@ $APPLICATION->SetTitle('DentOptics');
                             </div>
                             <!-- arrows -->
                             <div class="swiper-button-next swiper-button-black">
-                                <img src="/local/templates/main/img/svg/slide-right.svg" alt="">
+                                <img src="/local/templates/main/img/svg/slide-right.svg" loading="lazy" alt="">
                             </div>
                             <div class="swiper-button-prev swiper-button-black">
-                                <img src="/local/templates/main/img/svg/slide-left.svg" alt="">
+                                <img src="/local/templates/main/img/svg/slide-left.svg" loading="lazy" alt="">
                             </div>
                         </div>
 
@@ -442,8 +442,12 @@ $APPLICATION->SetTitle('DentOptics');
                     </div>
                 </div>
                 <!-- arrows -->
-                <div class="swiper-button-next swiper-button-black"></div>
-                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black" role="button">
+                    <img src="/local/templates/main/img/svg/slide-right.svg" loading="lazy" alt="">
+                </div>
+                <div class="swiper-button-prev swiper-button-black" role="button">
+                    <img src="/local/templates/main/img/svg/slide-left.svg" loading="lazy" alt="">
+                </div>
             </div>
 
         </div>
