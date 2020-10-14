@@ -1,3 +1,49 @@
+a {
+    color: #b7062b;
+}
+a:hover {
+    color: #9a0928;
+}
+
+.btn-primary {
+    border-color: #b7062b;
+    color: #fff;
+    background-color: #b7062b;
+}
+.btn-primary:hover {
+    border-color: #9a0928;
+    color: #fff;
+    background-color: #9a0928;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    border-color: #9a0928;
+    color: #fff;
+    background-color: #9a0928;
+}
+
+.btn-link {
+    color: #b7062b;
+}
+.btn-link:hover {
+    color: #9a0928;
+}
+
+/* filter */
+.smart-filter-slider-handle {
+    border-color: #b7062b;
+}
+.smart-filter-popup-result a {
+    color: #b7062b;
+}
+
+.product-item-image-slider-control.active,
+.product-item-image-slider-control:hover {
+    background-color: #b7062b;
+}
+
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
     content: none;

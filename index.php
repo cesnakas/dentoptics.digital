@@ -143,23 +143,6 @@ $APPLICATION->SetTitle('DentOptics');
             <h3 class="materials__headline">Расходные материалы</h3>
             <div class="row">
                 <div class="col-6">
-                    <div class="materials__card">
-                        <div class="materials__card-img">
-                            <img src="/local/templates/main/img/png/card-img.png" alt="">
-                        </div>
-                        <div class="materials__card-content">
-                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
-                            <span>Средняя прозрачность</span>
-                            <span>Класс материала</span>
-                            <span>Прозрачность 4Y-TZP | 45%</span>
-                            <span>Цвета 8</span>
-                        </div>
-                        <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
-                            <button>Подробнее</button>
-                            <button>В корзину</button>
-                        </div>
-                    </div>
                     <!-- // -->
                     <div class="materials__card">
                         <div class="materials__card-img">
@@ -181,17 +164,35 @@ $APPLICATION->SetTitle('DentOptics');
                     <!-- // -->
                     <div class="materials__card">
                         <div class="materials__card-img">
-                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                            <img src="/images/products/-/card-02.png" loading="lazy" alt="">
                         </div>
                         <div class="materials__card-content">
-                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
-                            <span>Средняя прозрачность</span>
+                            <h4 class="materials__card-title">IPS e.max CAD CEREC/inLab HT A1 C14/5</h4>
+                            <span>Высокая прозрачность</span>
                             <span>Класс материала</span>
-                            <span>Прозрачность 4Y-TZP | 45%</span>
-                            <span>Цвета 8</span>
+                            <span>Прозрачность</span>
+                            <span>Цвета 20</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
+                            <button>10 020 ₽</button>
+                            <button>Подробнее</button>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="materials__card">
+                        <div class="materials__card-img">
+                            <img src="/images/products/-/card-03.png" loading="lazy" alt="">
+                        </div>
+                        <div class="materials__card-content">
+                            <h4 class="materials__card-title">Empress CAD CEREC/inLab Multi A1 C14/5</h4>
+                            <span>Средняя прозрачность</span>
+                            <span>Класс материала</span>
+                            <span>Прозрачность</span>
+                            <span>Цвета</span>
+                        </div>
+                        <div class="materials__card-buttons">
+                            <button>7 240 ₽</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -200,17 +201,17 @@ $APPLICATION->SetTitle('DentOptics');
                 <div class="col-6">
                     <div class="materials__card">
                         <div class="materials__card-img">
-                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                            <img src="/images/products/-/card-04.png" loading="lazy" alt="">
                         </div>
                         <div class="materials__card-content">
-                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <h4 class="materials__card-title">Celtra Duo, LT A1, C14/4</h4>
                             <span>Средняя прозрачность</span>
                             <span>Класс материала</span>
-                            <span>Прозрачность 4Y-TZP | 45%</span>
-                            <span>Цвета 8</span>
+                            <span>Прозрачность</span>
+                            <span>Цвета</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
+                            <button>77 €</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -218,17 +219,17 @@ $APPLICATION->SetTitle('DentOptics');
                     <!-- // -->
                     <div class="materials__card">
                         <div class="materials__card-img">
-                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                            <img src="/images/products/-/card-05.png" loading="lazy" alt="">
                         </div>
                         <div class="materials__card-content">
-                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <h4 class="materials__card-title">IPS e.max ZirCAD Prime A1 98.5-16/1</h4>
                             <span>Средняя прозрачность</span>
                             <span>Класс материала</span>
-                            <span>Прозрачность 4Y-TZP | 45%</span>
-                            <span>Цвета 8</span>
+                            <span>Прозрачность </span>
+                            <span>Цвета </span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
+                            <button>20 740 ₽</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -236,17 +237,17 @@ $APPLICATION->SetTitle('DentOptics');
                     <!-- // -->
                     <div class="materials__card">
                         <div class="materials__card-img">
-                            <img src="/local/templates/main/img/png/card-img.png" alt="">
+                            <img src="/images/products/-/card-06.png" loading="lazy" alt="">
                         </div>
                         <div class="materials__card-content">
-                            <h4 class="materials__card-title">IPS e.max ZirCAD MT BL 98.5-14/1</h4>
+                            <h4 class="materials__card-title"><!--Диск циркониевый-->Extra Translucent multicolor A dark 18 EZRAD</h4>
                             <span>Средняя прозрачность</span>
                             <span>Класс материала</span>
-                            <span>Прозрачность 4Y-TZP | 45%</span>
-                            <span>Цвета 8</span>
+                            <span>Прозрачность</span>
+                            <span>Цвета</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
+                            <button>12 200 ₽</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
