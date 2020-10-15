@@ -1,0 +1,27 @@
+.bx-breadcrumb {
+	margin: .4rem 0 1rem;
+}
+.bx-breadcrumb i {
+	color: #b5bdc2;
+	line-height: 1;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-right: .5rem;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	float: left;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	line-height: 1;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {
+	white-space: normal;
+}
+.bx-breadcrumb .bx-breadcrumb-item a {
+	border-bottom: none;
+}
+.bx-breadcrumb .bx-breadcrumb-item a:hover {
+
+}

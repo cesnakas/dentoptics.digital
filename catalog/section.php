@@ -47,13 +47,23 @@ $APPLICATION->SetTitle("Каталог продукции");
                 <div class="col-9">
 
                     <?$APPLICATION->IncludeComponent(
+                        "bitrix:breadcrumb",
+                        "",
+                        Array(
+                            "PATH" => "",
+                            "SITE_ID" => "s1",
+                            "START_FROM" => "0"
+                        )
+                    );?>
+
+                    <?$APPLICATION->IncludeComponent(
                         "bitrix:catalog.section",
                         "bootstrap_v4",
                         Array(
                             "ACTION_VARIABLE" => "action",
                             "ADD_PICT_PROP" => "MORE_PHOTO",
                             "ADD_PROPERTIES_TO_BASKET" => "Y",
-                            "ADD_SECTIONS_CHAIN" => "N",
+                            "ADD_SECTIONS_CHAIN" => "Y",
                             "ADD_TO_BASKET_ACTION" => "ADD",
                             "AJAX_MODE" => "Y",
                             "AJAX_OPTION_ADDITIONAL" => "",

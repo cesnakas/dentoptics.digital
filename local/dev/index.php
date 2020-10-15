@@ -7,20 +7,12 @@ $APPLICATION->SetTitle("");
 	<div class="container-xl">
 
         <?$APPLICATION->IncludeComponent(
-            "bitrix:menu",
-            "catalog",
+            "bitrix:breadcrumb",
+            "",
             Array(
-                "ALLOW_MULTI_SELECT" => "Y",
-                "CHILD_MENU_TYPE" => "global",
-                "DELAY" => "N",
-                "MAX_LEVEL" => "3",
-                "MENU_CACHE_GET_VARS" => array(0=>"",),
-                "MENU_CACHE_TIME" => "3600",
-                "MENU_CACHE_TYPE" => "A",
-                "MENU_CACHE_USE_GROUPS" => "Y",
-                "MENU_THEME" => "site",
-                "ROOT_MENU_TYPE" => "global",
-                "USE_EXT" => "N"
+                "PATH" => "",
+                "SITE_ID" => "s1",
+                "START_FROM" => "0"
             )
         );?>
 		

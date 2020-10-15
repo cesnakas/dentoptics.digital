@@ -4,7 +4,18 @@ $APPLICATION->SetTitle("Каталог продукции");
 ?>
 
     <section class="section product">
-        <!--<div class="container-xl">-->
+
+        <div class="container-xl">
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:breadcrumb",
+                "",
+                Array(
+                    "PATH" => "",
+                    "SITE_ID" => "s1",
+                    "START_FROM" => "0"
+                )
+            );?>
+        </div>
 
         <?$APPLICATION->IncludeComponent(
             "bitrix:catalog.element",
