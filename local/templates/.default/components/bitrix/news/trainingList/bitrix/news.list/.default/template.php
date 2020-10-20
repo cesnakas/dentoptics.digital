@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<div class="TxtRaspisanie">РАСПИСАНИЕ</div>
+<div class="TxtRaspisanie animTop">РАСПИСАНИЕ</div>
 <div class="news-list">
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />

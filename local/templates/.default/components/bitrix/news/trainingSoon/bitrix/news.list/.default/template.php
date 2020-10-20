@@ -45,7 +45,7 @@ $this->setFrameMode(true);
 		<?endif?>
 		</div>
 		<div class="trainingSoonRight text-right col-4">
-			<span class="txtUzheSkoro">УЖЕ СКОРО</span>
+			<span class="txtUzheSkoro animTop">УЖЕ СКОРО</span>
 		<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 			<span class="news-date-time"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
 		<?endif?>

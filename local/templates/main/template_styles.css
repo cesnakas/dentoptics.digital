@@ -107,6 +107,10 @@ a:hover {
 	line-height: 19px;
 	color: #000000;
 }
+.contacts_form .contact_form_ok:hover{
+	background: #000000;
+    color: #ffffff;
+}
 .vot_chto{
 	font-size: 18px;
 	line-height: 25px;
@@ -139,6 +143,10 @@ a:hover {
     -o-object-fit: contain;
     object-fit: contain;
 }
+a.bottom_txt_cont:hover,.contacts_cont a:hover{
+	text-decoration:none;
+	color:#000;
+}
 /*--------- services ------------ */
 .contacts_form .services_form_ok {
     background: #F8F8F8;
@@ -151,6 +159,10 @@ a:hover {
     width: 140px;
     height: 37px;
     color: #000000;
+}
+.contacts_form .services_form_ok:hover,.service_btn:hover{
+	background: #000000;
+    color: #ffffff;
 }
 .service_title{
 	font-weight: bold;
@@ -186,4 +198,22 @@ a:hover {
 	font-size: 14px;
 	line-height: 19px;
 	color: #000000;
+}
+.service_tel:hover{
+	text-decoration:none;
+	color: #000000;
+}
+.social_app:hover,.service_btn:hover{
+	text-decoration:none;
+}
+.PhotoOtchetTxt{
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 68px;
+	letter-spacing: -0.045em;
+	color: #515151;
+	text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.13);
+    margin: 0 -12px;
 }
