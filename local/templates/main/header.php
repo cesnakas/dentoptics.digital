@@ -9,7 +9,7 @@
     // Bitrix
     use Bitrix\Main\Page\Asset;
     // Meta
-    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // Bootstrap
     use Bitrix\Main\UI\Extension;
     Extension::load('ui.bootstrap');
