@@ -9,7 +9,7 @@
     // Bitrix
     use Bitrix\Main\Page\Asset;
     // Meta
-    Asset::getInstance()->addString('<meta name="viewport" content="width=1440, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // Bootstrap
     use Bitrix\Main\UI\Extension;
     Extension::load('ui.bootstrap');
@@ -34,11 +34,11 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
 <body>
 
     <!-- navigation -->
-    <nav id="global_nav" class="navbar navbar-expand-md __fixed-top navbar-light">
+    <nav id="global_nav" class="navbar navbar-expand-md py-lg-0 __fixed-top navbar-light">
         <div class="container-xl">
             <!-- brand -->
-            <a class="navbar-brand d-none" href="/">
-                <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="">
+            <a class="navbar-brand d-sm-none" href="/">
+                <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="100px">
             </a>
             <!-- /brand -->
             <!-- button navigaion -->
