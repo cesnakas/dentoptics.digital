@@ -5,7 +5,7 @@
     <footer class="footer">
         <div class="container-xl">
             <div class="row">
-                <div class="footer__left col-3">
+                <div class="footer__left col-lg-3">
                     <p class="p">БУДЕМ НА СВЯЗИ!</p>
                     <p class="p mb-4">
                         Акции и бонусы для своих
@@ -26,9 +26,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer__center col-6">
+                <div class="footer__center col-lg-6">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">Покупателям</a></li>
                                 <li><a href="#">Контакты</a></li>
@@ -37,7 +37,7 @@
                                 <li><a href="#">Доставка и оплата</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">CAT/СAM системы</a></li>
                                 <li><a href="#">Сканеры интраоральные</a></li>
@@ -46,7 +46,7 @@
                                 <li><a href="#">Комплекты CAT/CAM</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">Расходные материалы</a></li>
                                 <li><a href="#">Диски</a></li>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__right col-3">
+                <div class="footer__right col-lg-3">
                     <div class="footer__right-info">
                         <div>
                             <a href="tel:">8 (495) 796 24 10</a>

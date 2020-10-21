@@ -70,7 +70,14 @@ $('#modalVideo').on('hidden.bs.modal', function (e) {
 
 // Manufacturers
 var mySwiper = new Swiper('.manufacturers .swiper-container', {
-	slidesPerView: 3,
+	slidesPerView: 1,
+	breakpoints: {
+		// >= 720px
+		720: {
+			slidesPerView: 3,
+			// spaceBetween: 40
+		},
+	},
 	loop: true,
 	autoplay: {
 		delay: 2500,
@@ -84,8 +91,15 @@ var mySwiper = new Swiper('.manufacturers .swiper-container', {
 
 // Reviews
 var mySwiper = new Swiper('.reviews__slider .swiper-container', {
-	slidesPerView: 2,
+	slidesPerView: 1,
 	spaceBetween: 0,
+	breakpoints: {
+		// >= 720px
+		720: {
+			slidesPerView: 2,
+			spaceBetween: 0
+		},
+	},
 	loop: true,
 	autoplay: {
 		delay: 3500,

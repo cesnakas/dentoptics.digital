@@ -142,7 +142,7 @@ $APPLICATION->SetTitle('DentOptics');
         <div class="container-xl">
             <h3 class="materials__headline">Расходные материалы</h3>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <!-- // -->
                     <div class="materials__card">
                         <div class="materials__card-img">
@@ -198,7 +198,7 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="materials__card">
                         <div class="materials__card-img">
                             <img src="/images/products/-/card-04.png" loading="lazy" alt="">
@@ -262,10 +262,11 @@ $APPLICATION->SetTitle('DentOptics');
     <section class="section reviews">
         <div class="container-xl">
             <div class="row">
-                <div class="col-2">
-                    <h3 class="reviews__headline">Отзывы</h3>
+                <div class="col-lg-2">
+                    <h3 class="d-none d-lg-block reviews__headline">Отзывы</h3>
+                    <h3 class="d-block d-lg-none">Отзывы</h3>
                 </div>
-                <div class="col-10">
+                <div class="col-lg-10">
                     <div class="reviews__slider">
 
                         <div class="reviews__items swiper-container">
@@ -343,7 +344,7 @@ $APPLICATION->SetTitle('DentOptics');
             <p class="about__lead">Создавая DentOptics digital мы хотели чтобы это была компания, которая несет новые идеи и технологии, которая постепенно перестраивает мышление стоматологов о своей работе, несет удовольствие, успех и новое качество жизни и врачам и пациентам.</p>
             <div class="row">
 
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_pay.svg" alt="">
                         <figcaption>
@@ -354,7 +355,7 @@ $APPLICATION->SetTitle('DentOptics');
                     <p>На нашем сайте удобная оплата картами MasterCard, Visa, МИР</p>
                 </div>
                 <!-- // -->
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_delivery.svg" alt="">
                         <figcaption>
@@ -365,7 +366,7 @@ $APPLICATION->SetTitle('DentOptics');
                     <p>Время - ценный ресурс, именно поэтому мы организовали быструю и надежную доставку</p>
                 </div>
                 <!-- // -->
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_equipment.svg" alt="">
                         <figcaption>
@@ -376,9 +377,9 @@ $APPLICATION->SetTitle('DentOptics');
                     <p>Покупая инновационное оборудование, вы делаете ценную инвестицию в себя и свою практику</p>
                 </div>
                 <!-- // -->
-                <div class="w-100 my-4"></div>
+                <div class="w-100 my-lg-4"></div>
                 <!-- // -->
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_doc.svg" alt="">
                         <figcaption>
@@ -389,7 +390,7 @@ $APPLICATION->SetTitle('DentOptics');
                     <p>Инструкции, регистрационные удостоверения, декларации соответствия, а также гарантийный талон выдаются каждому клиенту.</p>
                 </div>
                 <!-- // -->
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_terms.svg" alt="">
                         <figcaption>
@@ -400,7 +401,7 @@ $APPLICATION->SetTitle('DentOptics');
                     <p>Наши менеджеры готовы предоставить выгодные условия покупки. Мы, ценим нашего покупателя!</p>
                 </div>
                 <!-- // -->
-                <div class="about__item col-4">
+                <div class="about__item col-lg-4">
                     <figure>
                         <img src="/local/templates/main/img/svg/about_choose.svg" alt="">
                         <figcaption>
