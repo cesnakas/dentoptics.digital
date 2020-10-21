@@ -88,11 +88,11 @@
         <div class="footer__rights">
             <div class="container-xl">
                 <div class="row">
-                    <div class="col-2">© DENTOPTICS, 2020</div>
-                    <div class="col-3">
+                    <div class="col-lg-2">© DENTOPTICS, 2020</div>
+                    <div class="col-lg-3">
                         <a href="#">Пользовательское соглашение и условия</a>
                     </div>
-                    <div class="col-7">
+                    <div class="col-lg-7">
                         <a href="#">Обработка персональных данных</a>
                     </div>
                 </div>
