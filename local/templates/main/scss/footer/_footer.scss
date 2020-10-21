@@ -100,6 +100,11 @@
     align-items: flex-end;
     font-size: 12px;
     text-align: right;
+    
+    @media (max-width: 991.98px) {
+      align-items: center;
+      text-align: center;
+    }
 
     &-info {
       margin-bottom: 2rem;
@@ -138,11 +143,16 @@
   &__rights {
     display: flex;
     align-items: center;
-    height: 2.25rem;
+    min-height: 2.25rem;
     margin-top: 2.25rem;
     border-top: .5px solid #404040;
     color: #cacaca;
     font-size: 10px;
+
+    @media (max-width: 991.98px) {
+      // min-height: ;
+    }
+
     a {
       color: #cacaca;
     }

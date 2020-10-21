@@ -1,5 +1,12 @@
 .header {
-  margin-top: calc(40px + 3rem);// 95px;
+  margin-top: calc(40px + 3rem); // 95px;
+
+  @media (max-width: 991.98px) {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: #fff;
+  }
 
   &_grid {
     display: grid;
@@ -36,6 +43,12 @@
       color: #989898;
       font-size: 12px;
       background-color: #ececec;
+
+      @media (max-width: 991.98px) {
+        height: 50px;
+        background-color: #f9f9f9;
+        box-shadow: -6px -6px 16px 0 rgba(255,255,255,.5), 6px 6px 16px 0 rgba(32,64,94,.5);
+      }
     }
   }
 

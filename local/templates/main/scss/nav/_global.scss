@@ -4,6 +4,10 @@
     min-height: 40px;
     background-color: #fff;
     box-shadow: 0px 6px 16px 0 rgba(0,0,0,.25);
+    
+    @media (max-width: 991.98px) {
+      box-shadow: none;
+    }
   }
   
   @media (min-width: 991.98px) {
@@ -80,5 +84,23 @@
         margin-left: .75rem;
       }
     }
+  }
+
+  #dropdownMobile {
+    border-radius: .5rem;
+    box-shadow: -6px -6px 16px 0 rgba(255,255,255,.5), 6px 6px 16px 0 rgba(32,64,94,.5);
+  }
+
+  #dropdownMobileMenu {
+    position: fixed;
+    top: 56px;
+    left: .5rem;
+    right: .5rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: -6px -6px 16px 0 rgba(255,255,255,.5), 6px 6px 16px 0 rgba(32,64,94,.5);
   }
 }

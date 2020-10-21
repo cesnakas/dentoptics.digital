@@ -41,16 +41,13 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="108px">
             </a>
             <!-- /brand -->
+
             <!-- button catalog -->
-            <!--<button class="btn __btn-outline-dark ml-auto d-lg-none shadow">
-                Каталог
-            </button>-->
-
             <div class="nav-item dropdown ml-auto d-lg-none">
-                <a class="btn shadow" id="dropdownMobile" href="#" data-toggle="dropdown">Каталог</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMobile">
+                <a class="btn" id="dropdownMobile" href="#" data-toggle="dropdown">Каталог</a>
+                <div class="dropdown-menu dropdown-menu-right" id="dropdownMobileMenu" aria-labelledby="dropdownMobile">
 
-                    <div class="dropright">
+                    <div class="dropdown">
                         <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMobile">
                             <a class="dropdown-item" href="/catalog/ioscans/">Интраоральные сканеры</a>
@@ -60,7 +57,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                         </div>
                     </div>
                     <!-- // -->
-                    <div class="dropright">
+                    <div class="dropdown">
                         <a class="dropdown-item" href="/catalog/consumables/">Расходные материалы</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMobile">
                             <a class="dropdown-item" href="/catalog/disks/">Диски</a>
@@ -77,6 +74,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 </div>
             </div>
             <!-- /button catalog -->
+
             <!-- button navigaion -->
             <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,6 +82,29 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
             <!-- /button navigaion -->
             <!-- navigation menu -->
             <div class="collapse navbar-collapse" id="globalNav">
+                <!-- // -->
+                <div class="navbar-nav d-flex d-lg-none mt-3">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "global_nav",
+                    Array(
+                        "ALLOW_MULTI_SELECT" => "N",
+                        "CHILD_MENU_TYPE" => "global",
+                        "DELAY" => "N",
+                        "MAX_LEVEL" => "1",
+                        "MENU_CACHE_GET_VARS" => "",
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "MENU_THEME" => "site",
+                        "ROOT_MENU_TYPE" => "global",
+                        "USE_EXT" => "N",
+                        "COMPONENT_TEMPLATE" => ".default"
+                    ),
+                    false
+                );?>
+                </div>
+                <!-- // -->
                 <!-- left menu -->
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="#">Доставка и оплата</a>
@@ -136,7 +157,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
     </nav>
     <!-- /navigation -->
 
-    <header class="header mt-3 mt-lg-5">
+    <header class="header">
         <div class="container-xl">
             <div class="row justify-content-between">
                 <div class="col-3 brand d-none d-lg-inline-flex">
@@ -144,7 +165,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="">
                     </a>
                 </div>
-                <div class="col-3 header_search">
+                <div class="col-6 col-lg-3 header_search">
                     <!-- search -->
                     <input type="search" name="" id="" placeholder="Поиск по сайту">
                     <input type="submit" value="" hidden>
@@ -162,7 +183,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
+                <div class="col-6 col-lg-2 d-flex justify-content-end">
 
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:sale.basket.basket.line",

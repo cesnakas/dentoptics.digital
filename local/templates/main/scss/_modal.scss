@@ -7,6 +7,10 @@
   &-xl {
     min-width: calc(100vw - 20vw);
     max-width: calc(100vw - 20vw);
+
+    @media (max-width: 991.98px) {
+      max-width: inherit;
+    }
   }
 
   &-content {
