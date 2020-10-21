@@ -36,10 +36,17 @@ $('#modalVideoHeader').on('hidden.bs.modal', function (e) {
 
 // Slider
 var mySwiper = new Swiper('.slider .swiper-container', {
-	slidesPerView: 2,
+	slidesPerView: 1,
 	slidesOffsetBefore: 0,
 	slidesOffsetAfter: 0,
 	spaceBetween: 40,
+	breakpoints: {
+		// >= 720px
+		720: {
+			slidesPerView: 2,
+			spaceBetween: 40
+		},
+	},
 	loop: true,
 	autoplay: {
 		delay: 6500,

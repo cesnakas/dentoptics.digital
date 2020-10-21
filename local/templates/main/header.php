@@ -9,7 +9,7 @@
     // Bitrix
     use Bitrix\Main\Page\Asset;
     // Meta
-    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=width, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
+    Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // Bootstrap
     use Bitrix\Main\UI\Extension;
     Extension::load('ui.bootstrap');
@@ -38,11 +38,16 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
         <div class="container-xl">
             <!-- brand -->
             <a class="navbar-brand d-sm-none" href="/">
-                <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="100px">
+                <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="108px">
             </a>
             <!-- /brand -->
+            <!-- button catalog -->
+            <button class="btn __btn-outline-dark ml-auto d-lg-none shadow">
+                Каталог
+            </button>
+            <!-- /button catalog -->
             <!-- button navigaion -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- /button navigaion -->
@@ -100,10 +105,10 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
     </nav>
     <!-- /navigation -->
 
-    <header class="header">
+    <header class="header mt-3 mt-lg-5">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-3 brand">
+            <div class="row justify-content-between">
+                <div class="col-3 brand d-none d-lg-inline-flex">
                     <a href="/">
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="">
                     </a>
@@ -114,7 +119,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                     <input type="submit" value="" hidden>
                     <!-- /search -->
                 </div>
-                <div class="col-4 header_info">
+                <div class="col-4 d-none d-lg-inline-flex header_info">
                     <div>
                         <div>
                             <a href="tel:+79031302440">8 (903) 130 24 40 (Максим)</a>
@@ -160,7 +165,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
             </div>
         </div>
         <div class="container-xl">
-            <div id="catalog_nav" class="navbar navbar-expand-md">
+            <div id="catalog_nav" class="navbar navbar-expand-md d-none d-lg-block">
                 <!-- button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

@@ -8,7 +8,7 @@ $APPLICATION->SetTitle('DentOptics');
         <div class="container-xl">
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="slider__video"></div>
                     <h3 class="slider__headline">
                         CAD/СAM
@@ -33,7 +33,7 @@ $APPLICATION->SetTitle('DentOptics');
                     </div>
                 </div>
                 <!-- // -->
-                <div class="col-8 overflow-hidden">
+                <div class="col-lg-8 overflow-hidden">
 
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
