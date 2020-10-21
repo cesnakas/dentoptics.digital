@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Каталог продукции");
         <div class="container-xl">
 
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3">
 
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:catalog.smart.filter",
@@ -44,7 +44,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                     );?>
 
                 </div>
-                <div class="col-9">
+                <div class="col-lg-9">
 
                     <?$APPLICATION->IncludeComponent(
                         "bitrix:breadcrumb",

@@ -5,6 +5,11 @@
     width: 100%;
     max-height: 360px;
     overflow: hidden;
+
+    @media (max-width: 767.98px) {
+      max-height: inherit;
+      height: 360px;
+    }
   }
 
   & video,
@@ -15,6 +20,11 @@
     object-fit: cover;
     object-position: center;
     filter: blur(16px);
+
+    @media (max-width: 767.98px) {
+      max-height: inherit;
+      height: 360px;
+    }
   }
 
   &__overlay {
@@ -38,6 +48,10 @@
     color: rgba(255,255,255,.75);
     font-size: 48px;
     font-weight: 800;
+
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+    }
   }
   &__lead {
     margin-bottom: 3.25rem;

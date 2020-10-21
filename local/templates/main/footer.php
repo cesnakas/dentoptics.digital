@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="footer__rights">
-            <div class="container-xl">
+            <div class="container-xl py-3">
                 <div class="row">
                     <div class="col-lg-2">© DENTOPTICS, 2020</div>
                     <div class="col-lg-3">

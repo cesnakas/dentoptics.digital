@@ -42,9 +42,40 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
             </a>
             <!-- /brand -->
             <!-- button catalog -->
-            <button class="btn __btn-outline-dark ml-auto d-lg-none shadow">
+            <!--<button class="btn __btn-outline-dark ml-auto d-lg-none shadow">
                 Каталог
-            </button>
+            </button>-->
+
+            <div class="nav-item dropdown ml-auto d-lg-none">
+                <a class="btn shadow" id="dropdownMobile" href="#" data-toggle="dropdown">Каталог</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMobile">
+
+                    <div class="dropright">
+                        <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMobile">
+                            <a class="dropdown-item" href="/catalog/ioscans/">Интраоральные сканеры</a>
+                            <a class="dropdown-item" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
+                            <a class="dropdown-item" href="/catalog/labscans/">Лабораторные сканеры</a>
+                            <a class="dropdown-item" href="/catalog/milling/">Фрезеры</a>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <div class="dropright">
+                        <a class="dropdown-item" href="/catalog/consumables/">Расходные материалы</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMobile">
+                            <a class="dropdown-item" href="/catalog/disks/">Диски</a>
+                            <a class="dropdown-item" href="/catalog/blocks/">Блоки</a>
+                            <a class="dropdown-item" href="/catalog/cutters/">Фрезы</a>
+                            <a class="dropdown-item" href="/catalog/3d-printing/">3D печать</a>
+                            <a class="dropdown-item" href="/catalog/accessories/">Аксессуары</a>
+                            <a class="dropdown-item" href="/catalog/dye/">Красители</a>
+                        </div>
+                    </div>
+                    <!-- // -->
+                    <a class="dropdown-item" href="/catalog/software/">Программное обеспечение</a>
+
+                </div>
+            </div>
             <!-- /button catalog -->
             <!-- button navigaion -->
             <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
