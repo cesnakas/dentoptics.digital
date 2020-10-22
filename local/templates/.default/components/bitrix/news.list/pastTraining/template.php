@@ -12,6 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+
 <div class="news-list row"  id="<?=$this->GetEditAreaId($arItem['ID']);?>">
     <?if($arParams["DISPLAY_TOP_PAGER"]):?>
         <?=$arResult["NAV_STRING"]?><br />

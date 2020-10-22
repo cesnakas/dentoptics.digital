@@ -8,7 +8,7 @@ $APPLICATION->SetTitle('DentOptics');
         <div class="container-xl">
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
                     <div class="slider__video"></div>
                     <h3 class="slider__headline">
                         CAD/СAM

@@ -19,32 +19,34 @@ $this->setFrameMode(true);
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
 	<div class="row justify-content-center align-items-center" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-		<div class="col-5 trainingImg">
+		<div class="col-lg-5 trainingImg">
 		<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arItem["PREVIEW_PICTURE"])):?>
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
+                    <img
 						class="preview_picture"
 						border="0"
 						src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-						width="480"
+						width="100%"
 						alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
 						title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-						style="float:left"
-						/></a>
+						style="float: left; max-width: 480px"
+                    />
+                </a>
 			<?else:?>
 				<img
 					class="preview_picture"
 					border="0"
 					src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
 					alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
-					width="480"
+					width="100%"
 					title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-					style="float:left"
+					style="float:left; max-width: 480px"
 					/>
 			<?endif;?>
 		<?endif?>
 		</div>
-		<div class="trainingSoonRight text-right col-4">
+		<div class="trainingSoonRight text-right col-lg-4">
 			<span class="txtUzheSkoro animTop">УЖЕ СКОРО</span>
 		<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 			<span class="news-date-time"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>

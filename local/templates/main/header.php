@@ -42,7 +42,15 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
             </a>
             <!-- /brand -->
 
+            <!-- button catalog mobile -->
+            <button id="catalogBtnMobile" class="navbar-toggler ml-auto d-lg-none" type="button" data-toggle="collapse" data-target="#catalogMobile" aria-controls="catalogMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <span>Каталог</span>
+            </button>
+            <!-- /button catalog mobile -->
+
             <!-- button catalog -->
+            <?/*
             <div class="nav-item dropdown ml-auto d-lg-none">
                 <a class="btn" id="dropdownMobile" href="#" data-toggle="dropdown">Каталог</a>
                 <div class="dropdown-menu dropdown-menu-right" id="dropdownMobileMenu" aria-labelledby="dropdownMobile">
@@ -73,6 +81,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
 
                 </div>
             </div>
+            */?>
             <!-- /button catalog -->
 
             <!-- button navigaion -->
@@ -80,6 +89,64 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- /button navigaion -->
+
+            <!-- catalog mobile -->
+            <div class="collapse navbar-collapse d-lg-none" id="catalogMobile">
+
+                <div class="accordion mt-4" id="accordionExample">
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">CAT/СAM системы</button>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush">
+                                    <a class="list-group-item list-group-item-action" href="/catalog/ioscans/">Интраоральные сканеры</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/labscans/">Лабораторные сканеры</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/milling/">Фрезеры</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Расходные материалы</button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush">
+                                    <a class="list-group-item list-group-item-action" href="/catalog/disks/">Диски</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/blocks/">Блоки</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/cutters/">Фрезы</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/3d-printing/">3D печать</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/accessories/">Аксессуары</a>
+                                    <a class="list-group-item list-group-item-action" href="/catalog/dye/">Красители</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Программное обеспечение</button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="list-group list-group-flush">
+                                    <a class="list-group-item list-group-item-action" href="/catalog/software/">Программное обеспечение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /catalog mobile -->
+
             <!-- navigation menu -->
             <div class="collapse navbar-collapse" id="globalNav">
                 <!-- // -->
@@ -113,10 +180,10 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 </div>
                 <!-- /left menu -->
                 <!-- center menu -->
-                <div class="navbar-nav mx-auto">
+                <div class="navbar-nav d-none d-lg-flex mx-lg-auto">
                     <a class="nav-item nav-link" href="#">
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/location.svg" alt="">
-                        <span>Самара</span>
+                        <span>Москва</span>
                     </a>
                     <a class="nav-item nav-link" href="#">
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/mail.svg" alt="">
