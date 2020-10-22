@@ -23,7 +23,7 @@ if($arResult["SHOW_SMS_FIELD"] == true)
 }
 ?>
 
-<div class="bx-auth-reg container w-50 p-3 rounded shadow">
+<div class="bx-auth-reg container col-md-6 col-lg-4 p-3 rounded shadow">
 
 <?if($USER->IsAuthorized()):?>
 

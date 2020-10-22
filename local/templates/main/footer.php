@@ -5,14 +5,16 @@
     <footer class="footer">
         <div class="container-xl">
             <div class="row">
-                <div class="footer__left col-lg-3">
+                <div class="footer__left col-lg-3 text-center text-lg-left">
                     <p class="p">БУДЕМ НА СВЯЗИ!</p>
                     <p class="p mb-4">
                         Акции и бонусы для своих
                         <br>
                         в один клик - и у вас в почте.
                     </p>
-                    <input type="email" value="" placeholder="Укажите Ваш E-mail">
+                    <div>
+                        <input type="email" value="" placeholder="Укажите Ваш E-mail">
+                    </div>
                     <div class="footer__left-social">
                         <p class="">Мы в социальных сетях</p>
                         <a href="#">

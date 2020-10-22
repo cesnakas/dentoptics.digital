@@ -2,7 +2,7 @@
 CJSCore::Init();
 ?>
 
-<div class="bx-system-auth-form container w-25 p-3 rounded shadow">
+<div class="bx-system-auth-form container col-md-6 col-lg-4 p-3 rounded shadow">
     <?
     if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'])
         ShowMessage($arResult['ERROR_MESSAGE']);
