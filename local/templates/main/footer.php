@@ -17,14 +17,14 @@
                     </div>
                     <div class="footer__left-social">
                         <p class="">Мы в социальных сетях</p>
-                        <a href="#">
-                            <img src="/local/templates/main/img/svg/instagram.svg" alt="">
+                        <a href="https://www.instagram.com/examvisionrussian/" target="_blank">
+                            <img src="/local/templates/main/img/svg/instagram.svg" alt="Instagram">
                         </a>
-                        <a href="#">
-                            <img src="/local/templates/main/img/svg/vk.svg" alt="">
+                        <a href="https://vk.com/club111793076/" target="_blank">
+                            <img src="/local/templates/main/img/svg/vk.svg" alt="VKontakte">
                         </a>
-                        <a href="#">
-                            <img src="/local/templates/main/img/svg/fb.svg" alt="">
+                        <a href="https://www.facebook.com/dentoptics/" target="_blank">
+                            <img src="/local/templates/main/img/svg/fb.svg" alt="Facebook">
                         </a>
                     </div>
                 </div>
@@ -33,31 +33,31 @@
                         <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">Покупателям</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="/contacts/">Контакты</a></li>
                                 <li><a href="#">Обратная связь</a></li>
-                                <li><a href="#">Компания</a></li>
+                                <li><a href="/company/">Компания</a></li>
                                 <li><a href="#">Доставка и оплата</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">CAT/СAM системы</a></li>
-                                <li><a href="#">Сканеры интраоральные</a></li>
-                                <li><a href="#">Сканеры лабораторные</a></li>
-                                <li><a href="#">Фрезы</a></li>
-                                <li><a href="#">Комплекты CAT/CAM</a></li>
+                                <li><a href="/catalog/ioscans/">Сканеры интраоральные</a></li>
+                                <li><a href="/catalog/labscans/">Сканеры лабораторные</a></li>
+                                <li><a href="/catalog/milling/">Фрезы</a></li>
+                                <li><a href="/catalog/cad-cam-kits/">Комплекты CAT/CAM</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-lg-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">Расходные материалы</a></li>
-                                <li><a href="#">Диски</a></li>
-                                <li><a href="#">Блоки</a></li>
-                                <li><a href="#">Фрезы</a></li>
-                                <li><a href="#">3D печать</a></li>
-                                <li><a href="#">Аксессуары</a></li>
-                                <li><a href="#">Красители</a></li>
-                                <li><a href="#">Программное&nbsp;обеспечение</a></li>
+                                <li><a href="/catalog/disks/">Диски</a></li>
+                                <li><a href="/catalog/blocks/">Блоки</a></li>
+                                <li><a href="/catalog/cutters/">Фрезы</a></li>
+                                <li><a href="/catalog/3d-printing/">3D печать</a></li>
+                                <li><a href="/catalog/accessories/">Аксессуары</a></li>
+                                <li><a href="/catalog/dye/">Красители</a></li>
+                                <li><a href="/catalog/software/">Программное&nbsp;обеспечение</a></li>
                             </ul>
                         </div>
                     </div>

@@ -84,7 +84,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                             "DETAIL_URL" => "/catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
                             "DISABLE_INIT_JS_IN_COMPONENT" => "N",
                             "DISPLAY_BOTTOM_PAGER" => "N",
-                            "DISPLAY_COMPARE" => "N",
+                            "DISPLAY_COMPARE" => "Y",
                             "DISPLAY_TOP_PAGER" => "N",
                             "ELEMENT_SORT_FIELD" => "name",
                             "ELEMENT_SORT_FIELD2" => "SCALED_PRICE_1",

@@ -264,7 +264,7 @@ $APPLICATION->SetTitle('DentOptics');
             <div class="row">
                 <div class="col-lg-2">
                     <h3 class="d-none d-lg-flex reviews__headline">Отзывы</h3>
-                    <h3 class="d-flex d-lg-none reviews__headline-mobile">Отзывы</h3>
+                    <h3 class="d-flex d-lg-none reviews__headline-mobile justify-content-center">Отзывы</h3>
                 </div>
                 <div class="col-lg-10">
                     <div class="reviews__slider">

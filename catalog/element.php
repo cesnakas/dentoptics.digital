@@ -37,7 +37,7 @@ $APPLICATION->SetTitle("Каталог продукции");
                 "CACHE_TIME" => "36000000",
                 "CACHE_TYPE" => "A",
                 "CHECK_SECTION_ID_VARIABLE" => "N",
-                "COMPARE_PATH" => "",
+                "COMPARE_PATH" => "/compare/",
                 "COMPATIBLE_MODE" => "Y",
                 "COMPONENT_TEMPLATE" => "product",
                 "CONVERT_CURRENCY" => "N",

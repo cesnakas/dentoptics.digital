@@ -34,10 +34,10 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
 <body>
 
     <!-- navigation -->
-    <nav id="global_nav" class="navbar navbar-expand-md py-lg-0 __fixed-top navbar-light">
+    <nav id="global_nav" class="navbar navbar-expand-lg py-lg-0 __fixed-top navbar-light">
         <div class="container-xl">
             <!-- brand -->
-            <a class="navbar-brand d-sm-none" href="/">
+            <a class="navbar-brand d-lg-none" href="/">
                 <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="108px">
             </a>
             <!-- /brand -->
@@ -48,41 +48,6 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <span>Каталог</span>
             </button>
             <!-- /button catalog mobile -->
-
-            <!-- button catalog -->
-            <?/*
-            <div class="nav-item dropdown ml-auto d-lg-none">
-                <a class="btn" id="dropdownMobile" href="#" data-toggle="dropdown">Каталог</a>
-                <div class="dropdown-menu dropdown-menu-right" id="dropdownMobileMenu" aria-labelledby="dropdownMobile">
-
-                    <div class="dropdown">
-                        <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMobile">
-                            <a class="dropdown-item" href="/catalog/ioscans/">Интраоральные сканеры</a>
-                            <a class="dropdown-item" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
-                            <a class="dropdown-item" href="/catalog/labscans/">Лабораторные сканеры</a>
-                            <a class="dropdown-item" href="/catalog/milling/">Фрезеры</a>
-                        </div>
-                    </div>
-                    <!-- // -->
-                    <div class="dropdown">
-                        <a class="dropdown-item" href="/catalog/consumables/">Расходные материалы</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMobile">
-                            <a class="dropdown-item" href="/catalog/disks/">Диски</a>
-                            <a class="dropdown-item" href="/catalog/blocks/">Блоки</a>
-                            <a class="dropdown-item" href="/catalog/cutters/">Фрезы</a>
-                            <a class="dropdown-item" href="/catalog/3d-printing/">3D печать</a>
-                            <a class="dropdown-item" href="/catalog/accessories/">Аксессуары</a>
-                            <a class="dropdown-item" href="/catalog/dye/">Красители</a>
-                        </div>
-                    </div>
-                    <!-- // -->
-                    <a class="dropdown-item" href="/catalog/software/">Программное обеспечение</a>
-
-                </div>
-            </div>
-            */?>
-            <!-- /button catalog -->
 
             <!-- button navigaion -->
             <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
