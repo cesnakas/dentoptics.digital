@@ -9,6 +9,10 @@
     line-height: 1.5;
     text-align: right;
     color: #17141a;
+    
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   .swiper-container {

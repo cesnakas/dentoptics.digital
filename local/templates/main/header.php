@@ -150,9 +150,9 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/location.svg" alt="">
                         <span>Москва</span>
                     </a>
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link" href="mailto:mail@dentoptics.ru">
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/mail.svg" alt="">
-                        <span>example@dentoptics.digital</span>
+                        <span>mail@dentoptics.ru</span>
                     </a>
                     <a class="nav-item nav-link" href="#">
                         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/phone.svg" alt="">

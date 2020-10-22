@@ -39,7 +39,7 @@ $APPLICATION->SetTitle('DentOptics');
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">
-                                    <a href="#">
+                                    <a href="/catalog/ioscans/">
                                         <h4 class="h4">Сканеры <br> интраоральные</h4>
                                     </a>
                                 </div>
@@ -53,7 +53,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <!-- // -->
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">
-                                    <a href="#">
+                                    <a href="/catalog/labscans/">
                                         <h4 class="h4">Сканеры <br> лабораторные</h4>
                                     </a>
                                 </div>
@@ -67,7 +67,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <!-- // -->
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">
-                                    <a href="#">
+                                    <a href="/catalog/milling/">
                                         <h4 class="h4">Фрезерные <br> станки</h4>
                                     </a>
                                 </div>
@@ -81,7 +81,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <!-- // -->
                             <div class="swiper-slide">
                                 <div class="swiper-slide-title">
-                                    <a href="#">
+                                    <a href="/catalog/cad-cam-kits/">
                                         <h4 class="h4">CAD/CAM <br> Комплекты</h4>
                                     </a>
                                 </div>
