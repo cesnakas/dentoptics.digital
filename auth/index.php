@@ -1,5 +1,5 @@
 <?
-// define("NEED_AUTH", true);
+define("NEED_AUTH", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Авторизация и регистрация");
 
@@ -8,6 +8,21 @@ if ($USER->IsAuthorized()) {
 }
 ?>
 
+<?
+$logout = $APPLICATION->GetCurPageParam(
+    'logout=yes',
+    [
+        'login',
+        'logout',
+        'register',
+        'forgot_password',
+        'change_password'
+    ]
+);
+/* <a href="<?=$logout;?>">Выйти</a> */
+?>
+
+<?/*
     <section class="section">
         <div class="container-xl">
             <?$APPLICATION->IncludeComponent(
@@ -23,6 +38,7 @@ if ($USER->IsAuthorized()) {
             );?>
         </div>
     </section>
+*/?>
 
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
