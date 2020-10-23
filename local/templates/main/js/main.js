@@ -210,14 +210,23 @@ $('.animTop').viewportChecker({
 //Слайдер для Фотоотчета(обучение)
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 6,
-	slidesPerView: 8,
-	slidesPerColumn: 4,
+	slidesPerColumn: 20,
+	slidesPerView: 2,
 	slidesPerColumnFill: "row",
 	loop: false,
 	freeMode: true,
 	loopedSlides: 5, //looped slides should be the same
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
+	breakpoints: {
+		981: {
+			slidesPerColumn: 8,
+			slidesPerView: 8
+		},
+		450: {
+			slidesPerView: 4
+		}
+	}
 });
 var galleryTop = new Swiper('.gallery-top', {
 	spaceBetween: 10,

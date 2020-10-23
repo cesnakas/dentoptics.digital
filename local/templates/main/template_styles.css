@@ -217,3 +217,10 @@ a.bottom_txt_cont:hover,.contacts_cont a:hover{
 	text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.13);
     margin: 0 -12px;
 }
+@media screen and (max-width:375px){
+	.service_block1 p{
+    	width: 100%;
+		padding-left:20px;
+		padding-right:20px;
+	}
+}

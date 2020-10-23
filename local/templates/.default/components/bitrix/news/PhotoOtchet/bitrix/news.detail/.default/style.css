@@ -28,11 +28,10 @@ div.news-detail img.detail_picture
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.38));
 	margin: 40px 0;
 }
-.photootch{
-	margin: 75px 0 90px;
+.photootch {
+    margin: 55px 0 50px;
 }
 h3{
 	margint:75px 0;

@@ -23,12 +23,12 @@ $this->setFrameMode(true);
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
     <div class="row trainingSpoilers" data-id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-        <div class="col-lg-6"><b><span class="trainingStatus"><b>+</b></span> <?=$arItem["NAME"];?></b></div>
-        <div class="col-lg-3 text-center dateSpoiler">
+        <div class="col-sm-8 col-lg-6"><b><span class="trainingStatus"><b>+</b></span> <?=$arItem["NAME"];?></b></div>
+        <div class="col-sm-4 text-sm-right pr-sm-5 text-lg-center col-lg-3 text-center dateSpoiler">
 			<?php $date1 = $arItem["DISPLAY_PROPERTIES"]["date_training"]["DISPLAY_VALUE"];
 echo strtolower(FormatDate("d F", MakeTimeStamp($date1)));?>
 		</div>
-        <div class="col-lg-3 text-center"><b><?=$arItem["PROPERTIES"]["anchor_training"]["VALUE"];?></b></div><br>
+        <div class="col-lg-3 pl-lg-5 pl-sm-5 col-sm-6 text-center"><b><?=$arItem["PROPERTIES"]["anchor_training"]["VALUE"];?></b></div><br>
     </div>
     <div class="trainingContentList" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
         <div class="news-item row">

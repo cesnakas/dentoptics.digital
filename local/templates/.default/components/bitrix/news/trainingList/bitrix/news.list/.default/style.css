@@ -2,11 +2,6 @@ div.news-list
 {
 	word-wrap: break-word;
 }
-div.news-list img.preview_picture
-{
-	float:left;
-	margin:0 4px 6px 0;
-}
 .news-date-time {
 	color:#486DAA;
 }
@@ -81,4 +76,34 @@ div.news-list img.preview_picture
 }
 .col-6.blockList {
     padding: 0 0 0 75px;
+}
+@media screen and (max-width:991px){
+	.blockList{
+		width: max-content;
+		margin: auto;
+		display:block;
+	}
+	.blockList a{
+		display: block;
+		margin: auto;
+		width: max-content;
+    	margin-top: 25px;
+	}
+	.profAnchorList {
+		display: inline-block;
+		max-width: 100%;
+		text-align: center;
+		margin:20px 0;
+		padding-left: 0;
+	}
+	.trainingSpoilers {
+		height: 100px;
+	}
+}
+@media screen and (min-width:991px){
+	div.news-list img.preview_picture
+	{
+		float:left;
+		margin:0 4px 6px 0;
+	}
 }

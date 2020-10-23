@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Сервис");
 	<div class="row">
 		<h2 class="service_title col-lg-12 mb-5">Техническая поддержка</h2>
 		<div class="col-lg-6 offset-lg-3 service_block1 text-center pt-4 pb-3">
- <a href="" class="mx-4 social_app"> <img src="/local/templates/main/img/svg/whatsapp.svg" alt=""> </a> <a href="" class="mx-4 social_app"> <img src="/local/templates/main/img/svg/viber.svg" alt=""> </a> <a href="" class="mx-4 social_app"> <img src="/local/templates/main/img/svg/telegram.svg" alt=""> </a>
+ <a href="" class="mx-4 social_app"> <img src="/local/templates/main/img/svg/whatsapp.svg" alt=""> </a> <a href="" class="mx-md-4 social_app"> <img src="/local/templates/main/img/svg/viber.svg" alt=""> </a> <a href="" class="mx-4 social_app"> <img src="/local/templates/main/img/svg/telegram.svg" alt=""> </a>
 			<p class="my-5 mx-auto">
 				Получите поддержку по телефону или через удаленный доступ либо оставьте заявку и мы обязательно с вами свяжемся.
 			</p>
@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Сервис");
 		<div class="col-lg-12 service_block2 py-5 my-5">
 			<div class="row align-content-center">
 				<div class="col-lg-7">
-					<p class="pl-5">
+					<p class="pl-sm-5">
  <b>Как воспользоваться удаленной техподдержкой</b><br>
 						<br>
 						 1. Скачайте и запустите программу. TeamViewer.<br>
@@ -51,7 +51,7 @@ $APPLICATION->SetTitle("Сервис");
 		<div class="col-lg-4 pr-3">
  <input type="text" placeholder="Имя">
 		</div>
-		<div class="col-lg-4 px-2">
+		<div class="col-lg-4 my-3 my-lg-0 px-lg-2">
  <input type="tel" placeholder="Телефон">
 		</div>
 		<div class="col-lg-4 pl-3">

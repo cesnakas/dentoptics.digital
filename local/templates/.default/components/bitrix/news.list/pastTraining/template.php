@@ -12,7 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
 <div class="news-list row"  id="<?=$this->GetEditAreaId($arItem['ID']);?>">
     <?if($arParams["DISPLAY_TOP_PAGER"]):?>
         <?=$arResult["NAV_STRING"]?><br />
@@ -22,7 +21,7 @@ $this->setFrameMode(true);
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
     ?>
-    <div class="col-lg-6 my-3 photoOtchet-item">
+    <div class="col-md-6 my-3 photoOtchet-item">
         <div class="row">
             <div class="col-lg-6 px-0">
                 <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">

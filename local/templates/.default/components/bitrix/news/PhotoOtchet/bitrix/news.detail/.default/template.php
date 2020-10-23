@@ -55,7 +55,7 @@ $this->setFrameMode(true);
         <div class="swiper-wrapper">
             <?=$photoItem;?>
         </div>
-    </div>
+    </div><br><br><br>
 
     <?php
 

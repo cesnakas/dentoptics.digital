@@ -2,11 +2,6 @@ div.news-list
 {
 	word-wrap: break-word;
 }
-div.news-list img.preview_picture
-{
-	float:left;
-	margin:0 4px 6px 0;
-}
 .news-date-time {
 	color:#486DAA;
 }
@@ -61,4 +56,19 @@ div.news-list img.preview_picture
 .animationTop{
 	transform:translateY(0px);
 	opacity:1;
+}
+@media screen and (max-width:992px){
+	.photoOtchet-item .preview_picture{
+		border-radius: 25px 25px 0 0;
+	}
+	.photoOtchet-item{
+		padding:25px;
+	}
+	.photoOtchet-item a{
+		padding-bottom: 60px;
+    	display: block;
+	}
+	.photoOtchet-item > .row{
+		height: 100%;
+	}
 }

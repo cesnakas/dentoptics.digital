@@ -2,11 +2,6 @@ div.news-list
 {
 	word-wrap: break-word;
 }
-div.news-list img.preview_picture
-{
-	float:left;
-	margin:0 4px 6px 0;
-}
 .news-date-time {
 	color:#486DAA;
 }
@@ -14,12 +9,12 @@ div.news-list img.preview_picture
     background: #EEEEEE;
     border-radius: 20px;
     font-size: 14px;
+	margin: 14px;
 	height: 300px;
-	padding: 0 24px 0;
+	padding: 30px 24px 0;
 	position: relative;
-    right: 23px;
     z-index: 1;
-	bottom: 3px;
+    margin: -40px 14px 0;
 }
 .trainingSoonRight a {
     font-weight: 800;
@@ -84,3 +79,25 @@ div.news-list img.preview_picture
 .sect1 {
     margin-top: 130px;
 }
+
+@media screen and (min-width:991px){
+	.trainingSoonRight {
+		bottom: 3px;
+		right: 35px;
+		margin: 0;
+		padding: 0 24px 0;
+	}
+}
+@media screen and (max-width:992px){
+	.trainingImg .preview_picture {
+		max-width: 100%!important;
+	}
+	.trainingSoonRight a {
+		display: block;
+		margin-bottom: 15px;
+	}
+	.txtUzheSkoro{
+		top: -300px;
+	}
+}
+
