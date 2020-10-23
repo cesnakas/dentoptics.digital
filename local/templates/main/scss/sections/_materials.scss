@@ -90,6 +90,10 @@
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: contain;
+
+						@media (max-width: 991.98px) {
+							content: none;
+						}
 					}
 				}
 			}

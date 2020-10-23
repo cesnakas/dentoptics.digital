@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Компания");
 
     <section class="section" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, #FFF3F3 49.9%, rgba(255, 255, 255, 0) 104.13%);">
         <div class="container-xl text-center">
-            <img class="img-fluid mb-5" src="/images/about/about.png" loading="lazy" alt="about" style="max-width: 610px">
+            <img class="img-fluid mb-5" src="/images/about/about.png" loading="lazy" alt="about" style="width: 100%; max-width: 610px">
         </div>
     </section>
 
