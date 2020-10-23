@@ -148,7 +148,8 @@ a.bottom_txt_cont:hover,.contacts_cont a:hover{
 	color:#000;
 }
 /*--------- services ------------ */
-.contacts_form .services_form_ok {
+.contacts_form .services_form_ok,
+.contacts_form .contact_form_ok {
     background: #F8F8F8;
     border: 1px solid #000000;
     box-sizing: border-box;
