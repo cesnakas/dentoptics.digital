@@ -73,10 +73,18 @@
       object-fit: contain;
       object-position: center;
       text-decoration: none;
+      
+      @media (max-width: 767.98px) {
+        display: none;
+      }
     }
 
     span {
       margin-left: .5rem;
+
+      @media (max-width: 767.98px) {
+        margin-left: inherit;
+      }
     }
 
     @media (min-width: 991.98px) {

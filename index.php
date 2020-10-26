@@ -113,7 +113,7 @@ $APPLICATION->SetTitle('DentOptics');
     <section class="section video">
 
         <div class="video__wrapper">
-            <video poster="/local/templates/main/img/video/video.png" autoplay loop muted>
+            <video poster="<?=SITE_TEMPLATE_PATH;?>/img/video/video.png" autoplay loop muted playsinline>
                 <source src="/video/digital_event_2020.mp4" type="video/mp4">
             </video>
             <div class="video__overlay">
@@ -156,7 +156,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <span>Цвета 8</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>15 090 ₽</button>
+                            <button>15 090 руб.</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -174,7 +174,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <span>Цвета 20</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>10 020 ₽</button>
+                            <button>10 020 руб.</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -192,7 +192,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <span>Цвета</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>7 240 ₽</button>
+                            <button>7 240 руб.</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -229,7 +229,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <span>Цвета </span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>20 740 ₽</button>
+                            <button>20 740 руб.</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>
@@ -247,7 +247,7 @@ $APPLICATION->SetTitle('DentOptics');
                             <span>Цвета</span>
                         </div>
                         <div class="materials__card-buttons">
-                            <button>12 200 ₽</button>
+                            <button>12 200 руб.</button>
                             <button>Подробнее</button>
                             <button>В корзину</button>
                         </div>

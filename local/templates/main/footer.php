@@ -15,7 +15,7 @@
                     <div>
                         <input type="email" value="" placeholder="Укажите Ваш E-mail">
                     </div>
-                    <div class="footer__left-social">
+                    <div class="footer__left-social mb-3 mb-lg-0">
                         <p class="">Мы в социальных сетях</p>
                         <a href="https://www.instagram.com/examvisionrussian/" target="_blank">
                             <img src="/local/templates/main/img/svg/instagram.svg" alt="Instagram">
