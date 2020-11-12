@@ -62,7 +62,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
 
                     <div class="card">
                         <div class="card-header" id="headingOne">
-                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">CAT/СAM системы</button>
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">CAD/СAM системы</button>
                         </div>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
@@ -287,7 +287,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                                 <!--<a class="dropdown-item" href="/catalog/">Каталог</a>-->
 
                                 <div class="dropright">
-                                    <a class="dropdown-item" href="/catalog/cadcam/">CAT/СAM системы</a>
+                                    <a class="dropdown-item" href="/catalog/cadcam/">CAD/СAM системы</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
                                         <a class="dropdown-item" href="/catalog/ioscans/">Интраоральные сканеры</a>
                                         <a class="dropdown-item" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
