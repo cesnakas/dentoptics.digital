@@ -139,9 +139,9 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <!-- // -->
                 <!-- left menu -->
                 <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href="#">Доставка и оплата</a>
-                    <a class="nav-item nav-link" href="#">Медиа</a>
-                    <a class="nav-item nav-link" href="#">Производители</a>
+                    <a class="nav-item nav-link" href="/delivery-and-payment/">Доставка и оплата</a>
+                    <a class="nav-item nav-link" href="/media/">Медиа</a>
+                    <a class="nav-item nav-link" href="/manufacturers/">Производители</a>
                 </div>
                 <!-- /left menu -->
                 <!-- center menu -->
@@ -210,7 +210,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                             - с 10:00 до 20:00 часов по будням
                         </div>
                         <div>
-                            <a href="tel:+78660157063">8 (866) 015 70 63 (Елена)</a>
+                            <a href="tel:+79660157063">8 (966) 015 70 63 (Елена)</a>
                             - горячая линия c 8:00 до 17:00
                         </div>
                     </div>

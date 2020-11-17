@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <span class="contact_name">Сивуков Максим Владимирович</span><br>
                         <br>
-                        <a class="contact_tel" href="tel:89031302440">8 (903) 130 24 40</a>
+                        <a class="contact_tel" href="tel:+79031302440">8 (903) 130 24 40</a>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-3 contacts_cont">
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <span class="contact_name">Семенец Елена Олеговна</span><br>
                         <br>
-                        <a class="contact_tel" href="tel:89031302440">8 (866) 015 70 63</a>
+                        <a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>
                     </div>
                 </div>
                 <br>
