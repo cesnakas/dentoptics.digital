@@ -65,24 +65,24 @@
                 <div class="footer__right col-lg-3">
                     <div class="footer__right-info">
                         <div>
-                            <a href="tel:">8 (495) 796 24 10</a>
+                            <a href="tel:+4957962410">8 (495) 796 24 10</a>
                             - с 10:00 до 20:00 часов по будням
                         </div>
                         <div>
-                            <a href="tel:">8 (800) 100 23 83</a>
+                            <a href="tel:+79660157063">8 (966) 015 70 63</a>
                             - горячая линия c 8:00 до 17:00
                         </div>
                     </div>
                     <div class="footer__right-mail">
-                        <a href="mailto:">
-                            <img src="/local/templates/main/img/svg/mail-light.svg" alt="Mail">
+                        <a href="mailto:mail@dentoptics.ru">
+                            <img src="/local/templates/main/img/svg/mail-light.svg" alt="E-mail">
                             <span>mail@dentoptics.ru</span>
                         </a>
                     </div>
                     <button class="btn btn-feedback">Заказать обратный звонок</button>
                     <div class="footer__right-cards">
-                        <img src="/local/templates/main/img/svg/mastercard.svg" alt="MasterCard">
-                        <img src="/local/templates/main/img/svg/visa.svg" alt="VISA">
+                        <img src="/local/templates/main/img/svg/mastercard.svg" loading="lazy" alt="MasterCard">
+                        <img src="/local/templates/main/img/svg/visa.svg" loading=""lazy alt="VISA">
                     </div>
                 </div>
             </div>

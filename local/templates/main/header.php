@@ -11,16 +11,16 @@
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
     // Bootstrap
-    use Bitrix\Main\UI\Extension;
-    Extension::load('ui.bootstrap');
+    // use Bitrix\Main\UI\Extension;
+    // Extension::load('ui.bootstrap');
     // CSS
-    // Asset::getInstance()->addCss('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
-Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.css');
+    Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css');
+    Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main.min.css');
     // JS
-    // Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
-    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js');
-    // Asset::getInstance()->addJs('https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js');
+    Asset::getInstance()->addJs('https://code.jquery.com/jquery-3.5.1.min.js');
+    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
+    Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js');
     Asset::getInstance()->addJs('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
 ?>
@@ -34,7 +34,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
 <body>
 
     <!-- navigation -->
-    <nav id="global_nav" class="navbar navbar-expand-lg py-lg-0 __fixed-top navbar-light">
+    <nav id="global_nav" class="navbar navbar-expand-lg py-lg-0 navbar-light">
         <div class="container-xl">
             <!-- brand -->
             <a class="navbar-brand d-lg-none" href="/">
@@ -147,16 +147,17 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                 <!-- center menu -->
                 <div class="navbar-nav d-none d-lg-flex mx-lg-auto">
                     <a class="nav-item nav-link" href="#">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/location.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/location.svg" alt="Москва">
                         <span>Москва</span>
                     </a>
                     <a class="nav-item nav-link" href="mailto:mail@dentoptics.ru">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/mail.svg" alt="">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/mail.svg" alt="E-mail">
                         <span>mail@dentoptics.ru</span>
                     </a>
-                    <a class="nav-item nav-link" href="#">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/phone.svg" alt="">
-                        <span>Заказать обратный звонок</span>
+                    <a class="nav-item nav-link" href="tel:+74957962410">
+                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/phone.svg" alt="Телефон">
+                        <?/*<span>Заказать обратный звонок</span>*/?>
+                        <span>8 (495) 796 24 10</span>
                     </a>
                 </div>
                 <!-- /center menu -->
@@ -293,6 +294,7 @@ Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-b
                                         <a class="dropdown-item" href="/catalog/cad-cam-kits/">Комплекты CAD/CAM</a>
                                         <a class="dropdown-item" href="/catalog/labscans/">Лабораторные сканеры</a>
                                         <a class="dropdown-item" href="/catalog/milling/">Фрезеры</a>
+                                        <a class="dropdown-item" href="/catalog/cadcam-accessories/">Аксессуары</a>
                                     </div>
                                 </div>
                                 <!-- // -->
