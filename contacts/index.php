@@ -1,27 +1,34 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 ?>
 
     <section class="section">
         <div class="container-xl">
             <div class="row">
+
                 <div class="col-lg-6 mb-3 contacts_cont">
                     <img src="/images/contacts/maxim.png" height="150" class="contact_avatar">
                     <div class="contact_info">
-                        <span class="contact_name">Сивуков Максим Владимирович</span><br>
-                        <br>
+                        <p class="contact_name mb-0">Сивуков Максим Владимирович</p>
+                        <p class="text-muted mb-2">
+                            <small>Бренд-менеджер <b>3shape</b> и <b>Roland</b></small>
+                        </p>
                         <a class="contact_tel" href="tel:+79031302440">8 (903) 130 24 40</a>
                     </div>
                 </div>
+
                 <div class="col-lg-6 mb-3 contacts_cont">
                     <img src="/images/contacts/elena.png" height="150" class="contact_avatar">
                     <div class="contact_info">
-                        <span class="contact_name">Семенец Елена Олеговна</span><br>
-                        <br>
+                        <p class="contact_name mb-0">Семенец Елена Олеговна</p>
+                        <p class="text-muted mb-2">
+                            <small>Бренд-менеджер <b>Dentsply Sirona</b></small>
+                        </p>
                         <a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>
                     </div>
                 </div>
+
                 <br>
 
                 <div class="col-lg-3 mt-5 text-center text-lg-left">
@@ -81,5 +88,5 @@ $APPLICATION->SetTitle("Контакты");
     </section>
 
 <?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php");
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ?>
