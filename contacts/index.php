@@ -7,25 +7,49 @@ $APPLICATION->SetTitle("Контакты");
         <div class="container-xl">
             <div class="row">
 
-                <div class="col-lg-6 mb-3 contacts_cont">
+                <div class="col-lg-6 mb-5 contacts_cont">
                     <img src="/images/contacts/maxim.png" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сивуков Максим Владимирович</p>
                         <p class="text-muted mb-2">
-                            <small>Бренд-менеджер <b>3shape</b> и <b>Roland</b></small>
+                            <small>бренд-менеджер <b>3shape</b> и <b>Roland</b></small>
                         </p>
                         <a class="contact_tel" href="tel:+79031302440">8 (903) 130 24 40</a>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mb-3 contacts_cont">
+                <div class="col-lg-6 mb-5 contacts_cont">
                     <img src="/images/contacts/elena.png" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Семенец Елена Олеговна</p>
                         <p class="text-muted mb-2">
-                            <small>Бренд-менеджер <b>Dentsply Sirona</b></small>
+                            <small>бренд-менеджер <b>Dentsply Sirona</b></small>
                         </p>
                         <a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>
+                    </div>
+                </div>
+
+                <!--//-->
+
+                <div class="col-lg-6 mb-3 contacts_cont">
+                    <img src="/images/contacts/julia.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                    <div class="contact_info">
+                        <p class="contact_name mb-0">Сабирова Юлия Рашидовна</p>
+                        <p class="text-muted mb-2">
+                            <small>менеджер по расходные материалы для <b>Cad/Cam</b></small>
+                        </p>
+                        <a class="contact_tel" href="tel:+79371803465">8 (937) 180 34 65</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-3 contacts_cont">
+                    <img src="/images/contacts/ivan.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                    <div class="contact_info">
+                        <p class="contact_name mb-0">Голяков Иван Анатольевич</p>
+                        <p class="text-muted mb-2">
+                            <small>руководитель отдела <b>Digital</b></small>
+                        </p>
+                        <!--<a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>-->
                     </div>
                 </div>
 
