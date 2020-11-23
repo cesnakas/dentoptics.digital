@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Контакты");
             <div class="row">
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/maxim.png" height="150" class="contact_avatar">
+                    <img src="/images/contacts/maxim.png" loading="lazy" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сивуков Максим Владимирович</p>
                         <p class="text-muted mb-2">
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Контакты");
                 </div>
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/elena.png" height="150" class="contact_avatar">
+                    <img src="/images/contacts/elena.png" loading="lazy" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Семенец Елена Олеговна</p>
                         <p class="text-muted mb-2">
@@ -29,10 +29,8 @@ $APPLICATION->SetTitle("Контакты");
                     </div>
                 </div>
 
-                <!--//-->
-
-                <div class="col-lg-6 mb-3 contacts_cont">
-                    <img src="/images/contacts/julia.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                <div class="col-lg-6 mb-5 contacts_cont">
+                    <img src="/images/contacts/julia.jpg" loading="lazy" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сабирова Юлия Рашидовна</p>
                         <p class="text-muted mb-2">
@@ -42,8 +40,8 @@ $APPLICATION->SetTitle("Контакты");
                     </div>
                 </div>
 
-                <div class="col-lg-6 mb-3 contacts_cont">
-                    <img src="/images/contacts/ivan.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                <div class="col-lg-6 mb-5 contacts_cont">
+                    <img src="/images/contacts/ivan.jpg" loading="lazy" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Голяков Иван Анатольевич</p>
                         <p class="text-muted mb-2">
@@ -58,12 +56,9 @@ $APPLICATION->SetTitle("Контакты");
                 <div class="col-lg-3 mt-5 text-center text-lg-left">
                     <b class="contact_zag">Мы в социальных сетях</b><br>
                     <div class="bottom_txt_cont">
-                        <a href="https://vk.com/club111793076/"><img src="/local/templates/main/img/svg/vk_b.svg"
-                                                                     alt=""></a> <a
-                                href="https://www.instagram.com/examvisionrussian/"><img
-                                    src="/local/templates/main/img/svg/inst_b.svg" alt=""></a> <a
-                                href="https://www.facebook.com/dentoptics/"><img
-                                    src="/local/templates/main/img/svg/fb_b.svg" alt=""></a>
+                        <a href="https://vk.com/club111793076/"><img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/vk_b.svg" alt="VKontakte"></a>
+                        <a href="https://www.instagram.com/examvisionrussian/"><img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/inst_b.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/dentoptics/"><img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/fb_b.svg" alt="Facebook"></a>
                     </div>
                 </div>
 
