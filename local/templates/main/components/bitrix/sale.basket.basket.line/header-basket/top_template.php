@@ -8,6 +8,16 @@
 $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STUB'] == 'Y');
 ?>
 
+    <a href="/compare/">
+        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/compare.svg" alt="">
+        <span class="sr-only">Compare</span>
+    </a>
+
+    <a href="/personal/subscribe/">
+        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/subscribe.svg" alt="">
+        <span class="sr-only">Subscribe</span>
+    </a>
+
 <?if (!$arResult["DISABLE_USE_BASKET"]) { ?>
     <a href="<?=$arParams['PATH_TO_BASKET']?>" style="position: relative;">
         <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/basket.svg" alt="">

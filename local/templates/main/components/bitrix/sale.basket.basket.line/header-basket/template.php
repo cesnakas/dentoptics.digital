@@ -24,14 +24,6 @@ var <?=$cartId?> = new BitrixSmallCart;
 </script>
 
 <div id="<?=$cartId?>" class="header_basket <?=$cartStyle?>">
-    <a href="/compare/">
-        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/compare.svg" alt="">
-        <span class="sr-only">Compare</span>
-    </a>
-    <a href="/personal/subscribe/">
-        <img src="<?=SITE_TEMPLATE_PATH;?>/img/svg/subscribe.svg" alt="">
-        <span class="sr-only">Subscribe</span>
-    </a>
 <?
 /** @var \Bitrix\Main\Page\FrameBuffered $frame */
 $frame = $this->createFrame($cartId, false)->begin();
