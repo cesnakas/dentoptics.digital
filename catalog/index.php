@@ -1,10 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог продукции");
-
+/*
 if ($_SERVER["REQUEST_URI"] == '/catalog/') {
     LocalRedirect('/');
 }
+*/
 ?>
 
     <section class="section">
@@ -212,7 +213,8 @@ if ($_SERVER["REQUEST_URI"] == '/catalog/') {
                     "USE_SALE_BESTSELLERS" => "Y",
                     "USE_STORE" => "N",
                     "VARIABLE_ALIASES" => array("compare"=>array("ACTION_CODE"=>"action",),)
-                )
+                ),
+                false
             );?>
 
         </div>
