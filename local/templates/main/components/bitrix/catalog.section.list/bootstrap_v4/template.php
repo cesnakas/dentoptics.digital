@@ -64,7 +64,9 @@ $strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELET
 $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
 
 ?>
+
 <div class="row mb-4">
+
 	<div class="col">
 
 		<? if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID']) {
@@ -77,9 +79,10 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 				: $arResult['SECTION']['NAME']
 			    ); ?>
             </h2>
+
         <? } ?>
 
-        <?/* if (0 < $arResult["SECTIONS_COUNT"]) { ?>
+        <? if (0 < $arResult["SECTIONS_COUNT"]) { ?>
             <ul class="<? echo $arCurView['LIST']; ?>">
 
             <?
@@ -284,6 +287,7 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 			}
 			?>
             </ul>
-            <? } */?>
+            <? } ?>
+
 	</div>
 </div>

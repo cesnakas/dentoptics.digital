@@ -93,6 +93,20 @@ else
 	<?endif?>
 
 	<div class="pb-4 <?=(($isFilter || $isSidebar) ? "col-lg-9 col-md-8 col-sm-7" : "col")?>">
+
+        <?
+        $APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            ".default",
+            Array(
+                "PATH" => "",
+                "SITE_ID" => "s1",
+                "START_FROM" => "0"
+            ),
+            $component
+        );
+        ?>
+
 		<?
 		if (ModuleManager::isModuleInstalled("sale"))
 		{
