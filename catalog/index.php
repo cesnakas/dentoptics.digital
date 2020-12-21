@@ -1,11 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог продукции");
-/*
+
 if ($_SERVER["REQUEST_URI"] == '/catalog/') {
     LocalRedirect('/');
 }
-*/
 ?>
 
     <section class="section">
