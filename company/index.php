@@ -25,9 +25,6 @@ $APPLICATION->SetTitle("Компания");
 
     <section class="section">
         <div class="container-xl text-center">
-            <p class="mb-5" style="font-size: 24px; font-weight: bold; color: #a9a9a9;">
-                МЫ ДОПОЛНЯЕИ ЭТОТ РАЗДЕЛ
-            </p>
             <div class="row">
                 <div class="offset-lg-3 col-lg-6 mb-lg-1">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/VecTf1l7vHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

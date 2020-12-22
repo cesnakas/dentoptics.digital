@@ -26,7 +26,7 @@ if($arResult["SHOW_SMS_FIELD"] == true)
         <div class="container-xl">
             <!-- // -->
 
-<div class="bx-auth">
+<div class="bx-auth d-flex flex-column justify-content-center align-items-center">
 <?
 ShowMessage($arParams["~AUTH_RESULT"]);
 ?>

@@ -8,7 +8,7 @@ ShowMessage($arResult['ERROR_MESSAGE']);
         <div class="container-xl">
             <!-- // -->
 
-<div class="bx-auth">
+<div class="bx-auth d-flex flex-column justify-content-center align-items-center">
 <?if($arResult["AUTH_SERVICES"]):?>
 	<div class="bx-auth-title"><?echo GetMessage("AUTH_TITLE")?></div>
 <?endif?>
