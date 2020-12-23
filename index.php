@@ -137,7 +137,6 @@ $APPLICATION->SetTitle('DentOptics');
     <!-- /section video -->
 
     <!-- section expendable materials -->
-    <?/* TODO: Вывести инфоблоком данные карточек */?>
     <section class="section materials">
         <div class="container-xl">
             <h3 class="materials__headline">Расходные материалы</h3>
@@ -157,8 +156,8 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                         <div class="materials__card-buttons">
                             <button>15 090 руб.</button>
-                            <button>Подробнее</button>
-                            <button>В корзину</button>
+                            <a class="btn-button" href="<?=SITE_DIR;?>catalog/consumables/ips-e-max-zircad-mt-bl-98-5-14-1/">Подробнее</a>
+                            <button style="">В корзину</button>
                         </div>
                     </div>
                     <!-- // -->
@@ -175,7 +174,7 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                         <div class="materials__card-buttons">
                             <button>10 020 руб.</button>
-                            <button>Подробнее</button>
+                            <a class="btn-button" href="<?=SITE_DIR;?>catalog/consumables/ips-e-max-cad-cerec-inlab-ht-a1-c14-5/">Подробнее</a>
                             <button>В корзину</button>
                         </div>
                     </div>
@@ -230,7 +229,7 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                         <div class="materials__card-buttons">
                             <button>20 740 руб.</button>
-                            <button>Подробнее</button>
+                            <a class="btn-button" href="<?=SITE_DIR;?>catalog/consumables/ips-e-max-zircad-prime-a1-98-5-16-1/">Подробнее</a>
                             <button>В корзину</button>
                         </div>
                     </div>
@@ -248,7 +247,7 @@ $APPLICATION->SetTitle('DentOptics');
                         </div>
                         <div class="materials__card-buttons">
                             <button>12 200 руб.</button>
-                            <button>Подробнее</button>
+                            <a class="btn-button" href="<?=SITE_DIR;?>catalog/consumables/disk-tsirkonievyy-extra-translucent-multicolor-a-dark-18-ezrad/">Подробнее</a>
                             <button>В корзину</button>
                         </div>
                     </div>
