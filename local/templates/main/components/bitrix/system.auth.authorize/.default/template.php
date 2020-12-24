@@ -8,7 +8,7 @@ ShowMessage($arResult['ERROR_MESSAGE']);
         <div class="container-xl">
             <!-- // -->
 
-<div class="bx-auth d-flex flex-column justify-content-center align-items-center">
+<div class="bx-auth d-flex flex-column justify-content-center shadow p-3">
 <?if($arResult["AUTH_SERVICES"]):?>
 	<div class="bx-auth-title"><?echo GetMessage("AUTH_TITLE")?></div>
 <?endif?>
@@ -67,14 +67,18 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?endif?>
 			<tr>
 				<td></td>
-				<td class="authorize-submit-cell"><input type="submit" class="btn btn-primary" name="Login" value="<?=GetMessage("AUTH_AUTHORIZE")?>" /></td>
+				<td class="authorize-submit-cell">
+                    <input type="submit" class="btn btn-primary mb-3" name="Login" value="<?=GetMessage("AUTH_AUTHORIZE")?>" />
+                </td>
 			</tr>
 		</table>
 
 <?if ($arParams["NOT_SHOW_LINKS"] != "Y"):?>
 		<noindex>
 			<p>
-				<a href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>" rel="nofollow"><?=GetMessage("AUTH_FORGOT_PASSWORD_2")?></a>
+				<a href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>" rel="nofollow">
+                    <?=GetMessage("AUTH_FORGOT_PASSWORD_2")?>
+                </a>
 			</p>
 		</noindex>
 <?endif?>
@@ -82,8 +86,8 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?if($arParams["NOT_SHOW_LINKS"] != "Y" && $arResult["NEW_USER_REGISTRATION"] == "Y" && $arParams["AUTHORIZE_REGISTRATION"] != "Y"):?>
 		<noindex>
 			<p>
-				<a href="<?=$arResult["AUTH_REGISTER_URL"]?>" rel="nofollow"><?=GetMessage("AUTH_REGISTER")?></a><br />
-				<?=GetMessage("AUTH_FIRST_ONE")?>
+				<a href="<?=$arResult["AUTH_REGISTER_URL"]?>" rel="nofollow"><?=GetMessage("AUTH_REGISTER")?></a>
+                <small class="sr-only"><?=GetMessage("AUTH_FIRST_ONE")?></small>
 			</p>
 		</noindex>
 <?endif?>

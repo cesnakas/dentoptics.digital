@@ -8,7 +8,7 @@ ShowMessage($arParams["~AUTH_RESULT"]);
         <div class="container-xl">
             <!-- // -->
 
-<form name="bform" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
+<form class="bx-auth d-flex flex-column justify-content-center shadow p-3" name="bform" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
 <?
 if ($arResult["BACKURL"] <> '')
 {
@@ -55,8 +55,12 @@ if ($arResult["BACKURL"] <> '')
 	</div>
 </form>
 
-<div style="margin-top: 16px">
-	<p><a href="<?=$arResult["AUTH_AUTH_URL"]?>"><b><?=GetMessage("AUTH_AUTH")?></b></a></p>
+<div style="width: 100%; max-width: 480px; margin: 16px auto 0">
+	<p>
+        <a href="<?=$arResult["AUTH_AUTH_URL"]?>">
+            <b><?=GetMessage("AUTH_AUTH")?></b>
+        </a>
+    </p>
 </div>
 
 <script type="text/javascript">

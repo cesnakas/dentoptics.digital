@@ -1,5 +1,9 @@
 div.bx-auth {
+    width: 100%;
+    max-width: 480px;
+    margin: 16px auto 24px;
     font-size: 13px;
+    border-radius: .5rem;
 }
 div.bx-auth input.bx-auth-input {
     vertical-align: middle;
