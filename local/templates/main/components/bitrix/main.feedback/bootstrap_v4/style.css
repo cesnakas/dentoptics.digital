@@ -2,3 +2,12 @@
 .mf-control-required { color: #f00; }
 */
 
+.form-group input,
+.form-group textarea {
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6F6F6F;
+    background: #F7F7F7;
+}

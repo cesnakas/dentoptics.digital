@@ -24,7 +24,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
     <? } ?>
 
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
+        <div class="modal-content">
 
             <div class="modal-header border-bottom-0">
                 <h5 class="modal-title" id="exampleModalLabel"></h5>
@@ -36,18 +36,18 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 
             <div class="modal-body p-5">
 
-                <h5>Мы позвоним Вам в удобное время!</h5>
-                <p>Заполните форму для обратной связи. В разделе “комментарий” оставьте удобное для Вас время звонка</p>
+                <h5 class="text-center">Мы позвоним Вам в удобное время!</h5>
+                <p class="text-center">Заполните форму для обратной связи. В разделе “комментарий” оставьте удобное для Вас время звонка</p>
 
                 <form action="<?=POST_FORM_ACTION_URI?>" method="POST">
                     <?=bitrix_sessid_post()?>
                     <!--//-->
                     <div class="form-group">
                         <label for="mainFeedback_name">
-                            <?=GetMessage("MFT_NAME");?>
+                            <?/*=GetMessage("MFT_NAME");?>
                             <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])):?>
                             <span class="mf-control-required">*</span>
-                            <?endif;?>
+                            <?endif;*/?>
                         </label>
                         <input
                             type="text"
@@ -57,6 +57,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
                             aria-describedby="nameHelp"
                             value="<?=$arResult["AUTHOR_NAME"]?>"
                             <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])): ?>required<?endif?>
+                            placeholder="<?=GetMessage("MFT_NAME");?><? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])):?>*<?endif;?>"
                         />
                     </div>
                     <!--//-->
