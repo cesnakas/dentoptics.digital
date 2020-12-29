@@ -14,7 +14,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 ?>
 
 <!--//-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <? if(!empty($arResult["ERROR_MESSAGE"])) {
         foreach($arResult["ERROR_MESSAGE"] as $v)
             ShowError($v);
@@ -34,7 +34,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 
             </div>
 
-            <div class="modal-body p-5">
+            <div class="modal-body">
 
                 <h5 class="text-center">Мы позвоним Вам в удобное время!</h5>
                 <p class="text-center">Заполните форму для обратной связи. В разделе “комментарий” оставьте удобное для Вас время звонка</p>
@@ -63,10 +63,10 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
                     <!--//-->
                     <div class="form-group">
                         <label for="mainFeedback_email">
-                            <?=GetMessage("MFT_EMAIL")?>
+                            <?/*=GetMessage("MFT_EMAIL")?>
                             <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>
                             <span class="mf-control-required">*</span>
-                            <?endif?>
+                            <?endif*/?>
                         </label>
                         <input
                             type="text"
@@ -76,17 +76,24 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
                             aria-describedby="emailHelp"
                             value="<?=$arResult["AUTHOR_EMAIL"]?>"
                             <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>required<?endif?>
+                            placeholder="<?=GetMessage("MFT_EMAIL")?><? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>*<?endif?>"
                         />
                     </div>
                     <!--//-->
                     <div class="form-group">
                         <label for="mainFeedback_message">
-                            <?=GetMessage("MFT_MESSAGE")?>
+                            <?/*=GetMessage("MFT_MESSAGE")?>
                             <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("MESSAGE", $arParams["REQUIRED_FIELDS"])):?>
                             <span class="mf-control-required">*</span>
-                            <?endif?>
+                            <?endif*/?>
                         </label>
-                        <textarea class="form-control" id="mainFeedback_message" name="MESSAGE" rows="5">
+                        <textarea
+                            class="form-control"
+                            id="mainFeedback_message"
+                            name="MESSAGE"
+                            rows="5"
+                            placeholder="<?=GetMessage("MFT_MESSAGE")?><? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("MESSAGE", $arParams["REQUIRED_FIELDS"])):?>*<?endif?>"
+                        >
                             <?=$arResult["MESSAGE"]?>
                         </textarea>
                     </div>

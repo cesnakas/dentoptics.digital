@@ -2,12 +2,44 @@
 .mf-control-required { color: #f00; }
 */
 
-.form-group input,
-.form-group textarea {
+#feedbackModal .modal-content {
+    border-radius: 20px;
+}
+
+#feedbackModal .modal-content h5 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+}
+#feedbackModal .modal-content p {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000000;
+}
+
+#feedbackModal .modal-body {
+    padding: 10px 3rem 30px;
+}
+
+#feedbackModal form {
+    text-align: center;
+}
+
+#feedbackModal .form-group input,
+#feedbackModal .form-group textarea {
     border-radius: 10px;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
     color: #6F6F6F;
     background: #F7F7F7;
+}
+
+#feedbackModal input.btn {
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    /*line-height: 16px;*/
+    background: #BD193B;
 }

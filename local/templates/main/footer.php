@@ -80,7 +80,7 @@
                         </a>
                     </div>
 
-                    <button type="button" class="btn btn-primary btn-feedback" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-primary btn-feedback" data-toggle="modal" data-target="#feedbackModal">
                         Заказать обратный звонок
                     </button>
 
