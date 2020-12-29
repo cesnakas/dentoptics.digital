@@ -79,7 +79,11 @@
                             <span>mail@dentoptics.ru</span>
                         </a>
                     </div>
-                    <button class="btn btn-feedback">Заказать обратный звонок</button>
+
+                    <button type="button" class="btn btn-primary btn-feedback" data-toggle="modal" data-target="#exampleModal">
+                        Заказать обратный звонок
+                    </button>
+
                     <div class="footer__right-cards">
                         <img src="/local/templates/main/img/svg/mastercard.svg" loading="lazy" alt="MasterCard">
                         <img src="/local/templates/main/img/svg/visa.svg" loading=""lazy alt="VISA">
@@ -123,7 +127,9 @@
             </div>
         </div>
     </div>
-    <!-- // -->
+
+    <!--//-->
+
     <div class="modal fade" id="modalVideo" data-backdrop="_static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
 
@@ -144,6 +150,28 @@
             </div>
         </div>
     </div>
+
+    <!--//-->
+
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:main.feedback",
+        "bootstrap_v4",
+        array(
+            "USE_CAPTCHA" => "N",
+            "OK_TEXT" => "Спасибо, ваше сообщение принято.",
+            "EMAIL_TO" => "my@email.com",
+            "REQUIRED_FIELDS" => array(
+                0 => "NAME",
+                1 => "EMAIL",
+                2 => "MESSAGE",
+            ),
+            "EVENT_MESSAGE_ID" => array(
+                0 => "7",
+            ),
+            "COMPONENT_TEMPLATE" => "bootstrap_v4"
+        ),
+        false
+    );?>
     <!-- /modal -->
 
 </body>

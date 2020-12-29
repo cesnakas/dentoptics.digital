@@ -1,0 +1,189 @@
+<?
+if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
+
+\Bitrix\Main\UI\Extension::load("ui.bootstrap4");
+/**
+ * Bitrix vars
+ *
+ * @var array $arParams
+ * @var array $arResult
+ * @var CBitrixComponentTemplate $this
+ * @global CMain $APPLICATION
+ * @global CUser $USER
+ */
+?>
+
+<!--//-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <? if(!empty($arResult["ERROR_MESSAGE"])) {
+        foreach($arResult["ERROR_MESSAGE"] as $v)
+            ShowError($v);
+    }
+    if($arResult["OK_MESSAGE"] <> '') { ?>
+    <div class="alert alert-success"><?=$arResult["OK_MESSAGE"]?></div>
+    <? } ?>
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body p-5">
+
+                <h5>Мы позвоним Вам в удобное время!</h5>
+                <p>Заполните форму для обратной связи. В разделе “комментарий” оставьте удобное для Вас время звонка</p>
+
+                <form action="<?=POST_FORM_ACTION_URI?>" method="POST">
+                    <?=bitrix_sessid_post()?>
+                    <!--//-->
+                    <div class="form-group">
+                        <label for="mainFeedback_name">
+                            <?=GetMessage("MFT_NAME");?>
+                            <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])):?>
+                            <span class="mf-control-required">*</span>
+                            <?endif;?>
+                        </label>
+                        <input
+                            type="text"
+                            id="mainFeedback_name"
+                            name="user_name"
+                            class="form-control"
+                            aria-describedby="nameHelp"
+                            value="<?=$arResult["AUTHOR_NAME"]?>"
+                            <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])): ?>required<?endif?>
+                        />
+                    </div>
+                    <!--//-->
+                    <div class="form-group">
+                        <label for="mainFeedback_email">
+                            <?=GetMessage("MFT_EMAIL")?>
+                            <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>
+                            <span class="mf-control-required">*</span>
+                            <?endif?>
+                        </label>
+                        <input
+                            type="text"
+                            name="user_email"
+                            id="mainFeedback_email"
+                            class="form-control"
+                            aria-describedby="emailHelp"
+                            value="<?=$arResult["AUTHOR_EMAIL"]?>"
+                            <?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>required<?endif?>
+                        />
+                    </div>
+                    <!--//-->
+                    <div class="form-group">
+                        <label for="mainFeedback_message">
+                            <?=GetMessage("MFT_MESSAGE")?>
+                            <? if(empty($arParams["REQUIRED_FIELDS"]) || in_array("MESSAGE", $arParams["REQUIRED_FIELDS"])):?>
+                            <span class="mf-control-required">*</span>
+                            <?endif?>
+                        </label>
+                        <textarea class="form-control" id="mainFeedback_message" name="MESSAGE" rows="5">
+                            <?=$arResult["MESSAGE"]?>
+                        </textarea>
+                    </div>
+                    <!--//-->
+                    <?if($arParams["USE_CAPTCHA"] == "Y"):?>
+                    <div class="form-row">
+                        <div class="form-group col-auto">
+                            <label><?=GetMessage("MFT_CAPTCHA_CODE")?><span class="mf-control-required">*</span></label><br/>
+                            <input type="text" if="mainFeedback_captcha" class="form-control" name="captcha_word" size="30" maxlength="50" value=""/><br/>
+                        </div>
+                        <div class="form-group col">
+                            <label for="mainFeedback_captcha"><?=GetMessage("MFT_CAPTCHA")?></label> <div style="clear:both"></div>
+                            <input type="hidden" name="captcha_sid" value="<?=$arResult["capCode"]?>">
+                            <img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["capCode"]?>" width="180" height="38" alt="CAPTCHA">
+                        </div>
+                    </div>
+                    <?endif;?>
+                    <!--//-->
+                    <input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
+                    <input type="submit" name="submit"  value="<?=GetMessage("MFT_SUBMIT")?>" class="btn btn-primary">
+                </form>
+
+            </div>
+
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
+
+        </div>
+    </div>
+
+</div>
+<!--//-->
+
+<?/*
+<div class="mb-4">
+	<?if(!empty($arResult["ERROR_MESSAGE"]))
+	{
+		foreach($arResult["ERROR_MESSAGE"] as $v)
+			ShowError($v);
+	}
+	if($arResult["OK_MESSAGE"] <> '')
+	{
+		?><div class="alert alert-success"><?=$arResult["OK_MESSAGE"]?></div><?
+	}
+	?>
+	<form action="<?=POST_FORM_ACTION_URI?>" method="POST">
+		<?=bitrix_sessid_post()?>
+		<div class="form-group">
+			<label for="mainFeedback_name"><?=GetMessage("MFT_NAME");?><?
+				if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])):?><span class="mf-control-required">*</span><?endif;?></label>
+			<input
+				type="text"
+				id="mainFeedback_name"
+				name="user_name"
+				class="form-control"
+				value="<?=$arResult["AUTHOR_NAME"]?>"
+				<?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])): ?>required<?endif?>
+			/>
+		</div>
+
+		<div class="form-group">
+			<label for="mainFeedback_email"><?=GetMessage("MFT_EMAIL")?><?
+				if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?><span class="mf-control-required">*</span><?endif?></label>
+			<input
+				type="text"
+				name="user_email"
+				id="mainFeedback_email"
+				class="form-control"
+				value="<?=$arResult["AUTHOR_EMAIL"]?>"
+				<?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?>required<?endif?>
+			/>
+		</div>
+
+
+		<div class="form-group">
+			<label for="mainFeedback_message"><?=GetMessage("MFT_MESSAGE")?><?
+				if(empty($arParams["REQUIRED_FIELDS"]) || in_array("MESSAGE", $arParams["REQUIRED_FIELDS"])):?><span class="mf-control-required">*</span><?endif?></label>
+			<textarea class="form-control" id="mainFeedback_message" name="MESSAGE" rows="5"><?=$arResult["MESSAGE"]?></textarea>
+		</div>
+
+		<?if($arParams["USE_CAPTCHA"] == "Y"):?>
+		<div class="form-row">
+			<div class="form-group col-auto">
+				<label><?=GetMessage("MFT_CAPTCHA_CODE")?><span class="mf-control-required">*</span></label><br/>
+				<input type="text" if="mainFeedback_captcha" class="form-control" name="captcha_word" size="30" maxlength="50" value=""/><br/>
+			</div>
+			<div class="form-group col">
+				<label for="mainFeedback_captcha"><?=GetMessage("MFT_CAPTCHA")?></label> <div style="clear:both"></div>
+				<input type="hidden" name="captcha_sid" value="<?=$arResult["capCode"]?>">
+				<img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["capCode"]?>" width="180" height="38" alt="CAPTCHA">
+			</div>
+		</div>
+		<?endif;?>
+
+		<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
+		<input type="submit" name="submit"  value="<?=GetMessage("MFT_SUBMIT")?>" class="btn btn-primary">
+	</form>
+</div>
+*/?>
