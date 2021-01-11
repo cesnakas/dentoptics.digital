@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сивуков Максим Владимирович</p>
                         <p class="text-muted mb-2">
-                            <small>бренд-менеджер <b>3shape</b> и <b>Roland</b></small>
+                            <small>Бренд-менеджер <b>3shape</b> и <b>Roland</b></small>
                         </p>
                         <a class="contact_tel" href="tel:+79031302440">8 (903) 130 24 40</a>
                     </div>
@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <p class="contact_name mb-0">Семенец Елена Олеговна</p>
                         <p class="text-muted mb-2">
-                            <small>бренд-менеджер <b>Dentsply Sirona</b></small>
+                            <small>Бренд-менеджер <b>Dentsply Sirona</b></small>
                         </p>
                         <a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>
                     </div>
@@ -34,7 +34,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сабирова Юлия Рашидовна</p>
                         <p class="text-muted mb-2">
-                            <small>менеджер по расходные материалы для <b>Cad/Cam</b></small>
+                            <small>Менеджер по расходным материалам для <b>CAD/CAM</b></small>
                         </p>
                         <a class="contact_tel" href="tel:+79371803465">8 (937) 180 34 65</a>
                     </div>
@@ -45,7 +45,7 @@ $APPLICATION->SetTitle("Контакты");
                     <div class="contact_info">
                         <p class="contact_name mb-0">Голяков Иван Анатольевич</p>
                         <p class="text-muted mb-2">
-                            <small>руководитель отдела <b>Digital</b></small>
+                            <small>Руководитель отдела <b>Digital</b></small>
                         </p>
                         <!--<a class="contact_tel" href="tel:+79660157063">8 (966) 015 70 63</a>-->
                     </div>
