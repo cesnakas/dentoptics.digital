@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Контакты");
             <div class="row">
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/maxim.png" loading="lazy" height="150" class="contact_avatar">
+                    <img src="/images/contacts/maxim.png" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сивуков Максим Владимирович</p>
                         <p class="text-muted mb-2">
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Контакты");
                 </div>
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/elena.png" loading="lazy" height="150" class="contact_avatar">
+                    <img src="/images/contacts/elena.png" height="150" class="contact_avatar">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Семенец Елена Олеговна</p>
                         <p class="text-muted mb-2">
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Контакты");
                 </div>
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/julia.jpg" loading="lazy" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                    <img src="/images/contacts/julia.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Сабирова Юлия Рашидовна</p>
                         <p class="text-muted mb-2">
@@ -41,7 +41,7 @@ $APPLICATION->SetTitle("Контакты");
                 </div>
 
                 <div class="col-lg-6 mb-5 contacts_cont">
-                    <img src="/images/contacts/ivan.jpg" loading="lazy" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
+                    <img src="/images/contacts/ivan.jpg" width="150" height="150" class="contact_avatar rounded-circle overflow-hidden" style="object-fit:cover;object-position:top center">
                     <div class="contact_info">
                         <p class="contact_name mb-0">Голяков Иван Анатольевич</p>
                         <p class="text-muted mb-2">

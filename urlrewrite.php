@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  3 => 
+  13 => 
   array (
     'CONDITION' => '#^/catalog/([^/]+?)/([^/]+?)/\\??(.*)#',
     'RULE' => 'SECTION_CODE=$1&ELEMENT_CODE=$2&$3',
@@ -40,14 +40,6 @@ $arUrlRewrite=array (
     'PATH' => '/training/past/index.php',
     'SORT' => 100,
   ),
-  5 => 
-  array (
-    'CONDITION' => '#^/personal/#',
-    'RULE' => '',
-    'ID' => 'bitrix:sale.personal.section',
-    'PATH' => '/personal/index.php',
-    'SORT' => 100,
-  ),
   12 => 
   array (
     'CONDITION' => '#^/training/#',
@@ -56,12 +48,36 @@ $arUrlRewrite=array (
     'PATH' => '/training/index.php',
     'SORT' => 100,
   ),
+  14 => 
+  array (
+    'CONDITION' => '#^/personal/#',
+    'RULE' => '',
+    'ID' => 'bitrix:sale.personal.section',
+    'PATH' => '/personal/index.php',
+    'SORT' => 100,
+  ),
+  15 => 
+  array (
+    'CONDITION' => '#^/catalog/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/catalog/index.php',
+    'SORT' => 100,
+  ),
   8 => 
   array (
     'CONDITION' => '#^\\??(.*)#',
     'RULE' => '&$1',
     'ID' => 'bitrix:catalog.smart.filter',
     'PATH' => '/catalog/section.php',
+    'SORT' => 100,
+  ),
+  16 => 
+  array (
+    'CONDITION' => '#^/media/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/media/index.php',
     'SORT' => 100,
   ),
   1 => 
