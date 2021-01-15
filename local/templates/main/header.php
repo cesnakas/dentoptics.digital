@@ -41,20 +41,17 @@
                 <img src="<?=SITE_TEMPLATE_PATH;?>/img/logo-2.png" alt="" width="108px">
             </a>
             <!-- /brand -->
-
             <!-- button catalog mobile -->
             <button id="catalogBtnMobile" class="navbar-toggler ml-auto d-lg-none" type="button" data-toggle="collapse" data-target="#catalogMobile" aria-controls="catalogMobile" aria-expanded="false" aria-label="Toggle navigation">
                 <!--<span class="navbar-toggler-icon"></span>-->
                 <span>Каталог</span>
             </button>
             <!-- /button catalog mobile -->
-
             <!-- button navigaion -->
             <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#globalNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- /button navigaion -->
-
             <!-- catalog mobile -->
             <div class="collapse navbar-collapse d-lg-none" id="catalogMobile">
 
@@ -111,7 +108,6 @@
 
             </div>
             <!-- /catalog mobile -->
-
             <!-- navigation menu -->
             <div class="collapse navbar-collapse" id="globalNav">
                 <!-- // -->
