@@ -1,5 +1,4 @@
 <?if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
-
 <!DOCTYPE html>
 <html lang="<?=LANGUAGE_ID;?>">
 <head>
@@ -10,9 +9,6 @@
     use Bitrix\Main\Page\Asset;
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=0">');
-    // Bootstrap
-    // use Bitrix\Main\UI\Extension;
-    // Extension::load('ui.bootstrap');
     // CSS
     Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css');
     Asset::getInstance()->addCss('https://cdn.jsdelivr.net/npm/swiper@6.1.1/swiper-bundle.min.css');
