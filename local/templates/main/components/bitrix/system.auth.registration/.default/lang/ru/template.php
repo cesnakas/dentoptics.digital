@@ -18,3 +18,24 @@ $MESS["main_register_sms_code"] = "Код подтверждения из СМС
 $MESS["main_register_sms_send"] = "Отправить";
 $MESS["main_register_phone_number"] = "Номер телефона:";
 ?>
+
+<?
+$MESS['SYS_AUTH_REGISTRATION_TITLE']         = 'Регистрация';
+$MESS['SYS_AUTH_REGISTRATION_EMAIL_HELP']    = 'На указанный e-mail придет запрос на подтверждение регистрации.';
+$MESS['SYS_AUTH_REGISTRATION_EMAIL_SENT']    = 'На указанный в форме e-mail было выслано письмо с информацией о подтверждении регистрации.';
+$MESS['SYS_AUTH_REGISTRATION_FNAME']         = 'Имя';
+$MESS['SYS_AUTH_REGISTRATION_FNAME_EXAMPLE'] = 'Иван';
+$MESS['SYS_AUTH_REGISTRATION_LNAME']         = 'Фамилия';
+$MESS['SYS_AUTH_REGISTRATION_LNAME_EXAMPLE'] = 'Иванов';
+$MESS['SYS_AUTH_REGISTRATION_LOGIN']         = 'Логин';
+$MESS['SYS_AUTH_REGISTRATION_PASSWORD']      = 'Пароль';
+$MESS['SYS_AUTH_REGISTRATION_CONFIRM']       = 'Подтверждение пароля';
+$MESS['SYS_AUTH_REGISTRATION_EMAIL']         = 'E-mail';
+$MESS['SYS_AUTH_REGISTRATION_EMAIL_EXAMPLE'] = 'example@mail.ru';
+$MESS['SYS_AUTH_REGISTRATION_CAPTCHA_TITLE'] = 'Защита от автоматической регистрации';
+$MESS['SYS_AUTH_REGISTRATION_CAPTCHA_TEXT']  = 'Введите символы с картинки';
+$MESS['SYS_AUTH_REGISTRATION_SUBMIT']        = 'Регистрация';
+$MESS['SYS_AUTH_REGISTRATION_LOGIN_LEN']     = 'Логин должен быть не менее 3 символов длиной.';
+$MESS['SYS_AUTH_REGISTRATION_REQUIRED']      = 'Эти поля обязательны для заполнения';
+$MESS['SYS_AUTH_REGISTRATION_AUTH']          = 'Авторизация';
+?>
