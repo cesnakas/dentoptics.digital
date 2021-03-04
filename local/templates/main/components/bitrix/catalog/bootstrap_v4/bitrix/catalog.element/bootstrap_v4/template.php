@@ -711,11 +711,11 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											?>
 										</div>
 									</div>
-									<?
+									<?/*
 									if ($showSubscribe)
 									{
 										?>
-										<div class="mb-3">
+										<div class="mb-3 d-none">
 											<?
 											$APPLICATION->IncludeComponent(
 												'bitrix:catalog.product.subscribe',
@@ -735,7 +735,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										</div>
 										<?
 									}
-									?>
+									*/?>
 									<div class="mb-3" id="<?=$itemIds['NOT_AVAILABLE_MESS']?>" style="display: <?=(!$actualItem['CAN_BUY'] ? '' : 'none')?>;">
 										<a class="btn btn-primary product-item-detail-buy-button" href="javascript:void(0)" rel="nofollow"><?=$arParams['MESS_NOT_AVAILABLE']?></a>
 									</div>
@@ -748,13 +748,31 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 						{
 							?>
 							<div class="product-item-detail-compare-container">
-								<div class="product-item-detail-compare">
-									<div class="checkbox">
+								<div class="product-item-detail-compare d-lg-flex justify-content-between align-items-center">
+									<div class="checkbox w-50 mr-2">
 										<label class="m-0" id="<?=$itemIds['COMPARE_LINK']?>">
 											<input type="checkbox" data-entity="compare-checkbox">
 											<span class="sr-only" data-entity="compare-title"><?=$arParams['MESS_BTN_COMPARE']?></span>
 										</label>
 									</div>
+                                    <div class="w-50 ml-2">
+                                        <? if ($showSubscribe) { ?>
+                                        <?$APPLICATION->IncludeComponent(
+                                            'bitrix:catalog.product.subscribe',
+                                            '.default',
+                                            array(
+                                                'CUSTOM_SITE_ID' => isset($arParams['CUSTOM_SITE_ID']) ? $arParams['CUSTOM_SITE_ID'] : null,
+                                                'PRODUCT_ID' => $arResult['ID'],
+                                                'BUTTON_ID' => $itemIds['SUBSCRIBE_LINK'],
+                                                'BUTTON_CLASS' => 'btn u-btn-outline-primary product-item-detail-buy-button',
+                                                'DEFAULT_DISPLAY' => !$actualItem['CAN_BUY'],
+                                                'MESS_BTN_SUBSCRIBE' => !$arParams['~MESS_BTN_SUBSCRIBE'],
+                                            ),
+                                            $component,
+                                            array('HIDE_ICONS' => 'Y')
+                                        );?>
+                                        <? } ?>
+                                    </div>
 								</div>
 							</div>
 							<?

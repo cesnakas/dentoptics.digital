@@ -4,9 +4,9 @@
 	position: relative;
 	margin-bottom: 15px;
 	padding: 15px 15px 0;
-	border: 1px solid #e4e4e4;
+	border: 1px solid #f8f8f8;
 	border-radius: 3px;
-	background-color: #fff;
+	background-color: #f8f8f8;
 }
 
 .bx-retina .product-item-detail-pay-block { border-width: .5px; }
@@ -16,12 +16,11 @@
 /*region Compare*/
 .product-item-detail-compare-container {
 	position: relative;
-	margin: 0 -15px 1px -14px;
-	padding: 4px 15px;
+	/*margin: 0 -15px 1px -14px;*/
+	padding: 4px 0 !important;
 	min-height: 30px;
-	border-top: 1px solid #e4e4e4;
-	background: #f3f3f3;
-	box-shadow: inset 0 1px 1px 0 #eee;
+	border-top: 1px solid #f8f8f8;
+	background: #f8f8f8;
 	color: #4e4e4e;
 	vertical-align: middle;
 	font-size: 12px;
@@ -372,12 +371,15 @@
 /*region Buy button*/
 .btn.product-item-detail-buy-button {
 	position: relative;
-	display: block;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
-	max-width: 250px;
 	width: 100%;
+	height: 40px;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	border-radius: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -385,7 +387,7 @@
 .product-item-detail-short-card-btn .btn.product-item-detail-buy-button { margin: 0; }
 
 .btn.product-item-detail-buy-button span {
-	position: absolute;
+	/*position: absolute;
 	top: 50%;
 	right: 0;
 	left: 0;
@@ -394,7 +396,7 @@
 	max-width: 100%;
 	white-space: normal;
 	line-height: 16px;
-	transform: translateY(-50%);
+	transform: translateY(-50%);*/
 }
 
 .btn-link.product-item-detail-buy-button { height: 25px; }
