@@ -2,7 +2,7 @@
 
 <div class="container my-5">
     <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 col-xl-4 shadow">
+        <div class="col-lg-10 pt-3 rounded-lg shadow" style="max-width: 640px;">
 
             <h2 class="display-6 mb-3"><?=GetMessage('SYS_AUTH_REGISTRATION_TITLE'); /* заголовок формы */ ?></h2>
 
@@ -243,7 +243,7 @@
         <input
                 type="submit"
                 name="Register"
-                class="btn btn-block btn-lg btn-primary"
+                class="btn btn-block btn-lg btn-primary shadow"
                 value="<?=GetMessage('SYS_AUTH_REGISTRATION_SUBMIT'); /* кнопка отправки формы */ ?>"
         />
     </div>

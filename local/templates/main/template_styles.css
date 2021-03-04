@@ -269,3 +269,19 @@ a.bottom_txt_cont:hover,.contacts_cont a:hover{
 .section-manufacturers .card:hover {
 
 }
+
+.popup-window.popup-window-with-titlebar {
+	border-radius: .5rem;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,25%);
+	box-shadow: 0 5px 15px rgba(0,0,0,25%);
+}
+.bx-catalog-subscribe-form-container-input input[type="text"] {
+	border-radius: .25rem;
+}
+.popup-window-buttons .btn.btn-primary {
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,25%);
+	box-shadow: 0 5px 15px rgba(0,0,0,25%);
+}
+/*
+
+*/
