@@ -13,17 +13,6 @@
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="dentoptics.tmweb.ru">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath path="/bitrix" />
-            <excludedPath path="/upload" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
     </serverData>
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
